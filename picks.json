@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "date": "2026-04-19 (週日)",
+    "taiex": "約 35,450 點（4/17 收盤），近期觸 36,980 點歷史新高",
+    "ytd": "約 +25%（領先 MSCI Asia Pacific +9%）",
+    "theme": "AI 半導體 / 機櫃 ODM / 液冷散熱 三主軸續強，外資轉買 + 高盛上修 EPS 共識 +34%",
+    "n_picks": 6,
+    "generated_at": "2026-04-19 (台股休市，價格基於 04-17 收盤)",
+    "upcoming_catalysts": "• **04/22** Tesla Q1 法說（影響 EV 概念股）\n• **04/29** Alphabet / Meta Q1 法說（雲端 capex 指引→ AI 鏈）\n• **04/30** Apple Q1 + 台達電 (2308) 法說\n• **05/07** 雙鴻 (3324) Q1 財報\n• **05 月中** 鴻海 (2317)、緯創 (3231) Q1 法說"
+  },
+  "picks": [
+    {
+      "ticker": "3231",
+      "name": "緯創",
+      "price": 135,
+      "market_cap_str": "4,290 億",
+      "pe_trailing": 14.9,
+      "pe_forward": 10.2,
+      "scenarios": {"bear": 10.5, "base": 13.17, "bull": 15.5},
+      "targets": {"bear": 116, "base": 184, "bull": 248},
+      "upside_base_pct": 36.3,
+      "financial_highlight": "2025 全年營收 NT$2.19 兆 (+108% YoY，創紀錄)、EPS NT$9.04 (+48%)。Q4 EPS NT$2.61 (+41% YoY)。AI 伺服器 + 網通業務雙引擎，網通訂單 2026 看 10 倍跳增；轉投資緯穎 (6669) 2025 EPS NT$275、貢獻緯創獲利約一半。",
+      "catalysts": [
+        "2026/05 Q1 法說會（網通業務指引 + GB300 量產時程）",
+        "2026/06 股東會 + 配息公告（預估 DPS NT$7+，殖利率上看 5.3%）",
+        "2026 H2 GB300 機櫃量產 + Dallas 德州廠 Q1 投產，鞏固 NVIDIA 首選代工地位"
+      ],
+      "risks": [
+        "毛利率壓力：MS 1 月報告示警系統組裝比重拖累 GM",
+        "GB200→GB300 世代轉換空檔：公司自行示警 Q2-Q3 營收恐持平"
+      ],
+      "reason": "緯創 P/E 僅 10.2 倍（同業鴻海 13x、廣達 12x），2026 預估 EPS NT$13.17、殖利率 5%+，AI 伺服器 + 網通 10 倍成長 + 大摩目標價 NT$215。安全邊際高、重估至 14 倍對應 NT$184 (+36%)，本組合首選。",
+      "sources_short": "Digitimes / Morgan Stanley / Yahoo Finance TW / Roo.Cash"
+    },
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "price": 2030,
+      "market_cap_str": "52.6 兆",
+      "pe_trailing": 27.3,
+      "pe_forward": 22.5,
+      "scenarios": {"bear": 91, "base": 97, "bull": 101},
+      "targets": {"bear": 2300, "base": 2645, "bull": 3250},
+      "upside_base_pct": 30.3,
+      "financial_highlight": "Q1 2026 營收 NT$1,134 億 (+35% YoY)，EPS NT$22.08 (+58% YoY，季 +13%)，毛利率 66.2% 創新高、超越指引上緣 120bp。FY2025 EPS NT$66.26 (+46% YoY)。CoWoS 產能 2026 底擴至 130k wpm（vs 2024 底 35k，3.7 倍），NVIDIA 已預訂 2026-27 逾 60% 產能。",
+      "catalysts": [
+        "Q2 法說會 2026/07/16，焦點在於是否將全年指引從 +30% 再上修",
+        "Arizona Fab 21 二期 3nm 機台安裝 Q3 2026 提前到位（美國代工溢價 +10%）",
+        "CoWoS 產能 2026 底達 130k wpm，AI 訂單能見度直通 2027"
+      ],
+      "risks": [
+        "美國對晶片關稅 / 地緣政治：直接影響有限但情緒衝擊難避",
+        "AI 算力消化期：H2 若雲端業者削減 capex，CoWoS 過度擴產風險"
+      ],
+      "reason": "台積電 Q1 EPS 22.08 創高、毛利率 66.2%，CoWoS 獨家受惠 AI 鎖定至 2027；以 23 倍 forward P/E 對 2027E EPS 對應 NT$2,645 (+30%)。AI 趨勢的核心持股，回檔即進場。",
+      "sources_short": "TSMC IR / Goldman Sachs / Digitimes / Bloomberg"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "price": 206,
+      "market_cap_str": "2.89 兆",
+      "pe_trailing": 15.1,
+      "pe_forward": 12.9,
+      "scenarios": {"bear": 14.5, "base": 17.5, "bull": 20.5},
+      "targets": {"bear": 174, "base": 245, "bull": 349},
+      "upside_base_pct": 18.9,
+      "financial_highlight": "FY2025 EPS NT$13.61 (+24% YoY 創新高)、營收 NT$8.10 兆 (+18% YoY，台股年營收冠軍)。Q4 2025 營收 NT$2,603 億 (+22% YoY)。配息 NT$7.2、殖利率 ~3.5%。GB200/GB300 全球機櫃市佔逾 50%。",
+      "catalysts": [
+        "Q1 2026 法說會（5 月中旬，AI 機櫃 QoQ 放量指引)",
+        "GB300 量產出貨 Q2-Q3 2026，每櫃 ASP 升級帶動 GM",
+        "EV 里程碑：Model C 北美量產 + Mitsubishi 大洋洲出口 H2 2026"
+      ],
+      "risks": [
+        "AI 客戶集中度高：CSP 雙雄占 AI 機櫃逾 40%，任一砍單衝擊大",
+        "毛利率與 FX：Q4 EPS 季減 22% 部分來自 FX 與產品組合，TWD 強勢直接侵蝕"
+      ],
+      "reason": "鴻海以 12.9x forward P/E 站穩 AI 機櫃龍頭，GB300 量產 + 2026 EPS 衝 NT$17.5；現價 NT$206 以 14 倍合理本益比對應目標 NT$245 (+19%)，bull case 高盛 NT$400。",
+      "sources_short": "鴻海 IR / Goldman Sachs / Morgan Stanley / 鉅亨網"
+    },
+    {
+      "ticker": "3324",
+      "name": "雙鴻",
+      "price": 1035,
+      "market_cap_str": "860 億",
+      "pe_trailing": 36.6,
+      "pe_forward": 18.1,
+      "scenarios": {"bear": 47, "base": 57, "bull": 62},
+      "targets": {"bear": 752, "base": 1140, "bull": 1364},
+      "upside_base_pct": 10.1,
+      "financial_highlight": "2025 全年 EPS NT$28.26 (+36% YoY 創高)、營收 NT$232.76 億 (+47.5% YoY)。Q1 2026 累計營收 NT$85.5 億 (+93.7% YoY)，3 月單月 +91.7%。液冷比重 2024 年 12% → 2025 Q4 51% → 2026 將破 55%。FactSet 14 位分析師共識 2026 EPS NT$57.26、TP NT$1,330。",
+      "catalysts": [
+        "2026/05/07 Q1 財報（預期確認 +90% YoY 營收動能）",
+        "H2 2026 NVIDIA Vera Rubin 平台採全液冷設計，Manifold 內含量大增",
+        "Q1 2026 起泰國 2 廠量產，產能翻倍"
+      ],
+      "risks": [
+        "估值偏高：trailing P/E 36x 已反映完美執行；奇鋐垂直整合更強，恐侵蝕市佔",
+        "ASIC 客戶 (AWS / Meta) 議價能力強，泰廠初期 ramp 成本壓 GM"
+      ],
+      "reason": "雙鴻液冷比重從 12% 衝到 55% 的 mix shift 故事仍在延燒，FactSet 共識目標 NT$1,330 (+28%) 但保守 base case 僅 +10%；現價已大幅 re-rate，建議 NT$950 以下分批承接。",
+      "sources_short": "FactSet / 財報狗 / 鉅亨網 / 經濟日報"
+    },
+    {
+      "ticker": "3017",
+      "name": "奇鋐",
+      "price": 2400,
+      "market_cap_str": "9,412 億",
+      "pe_trailing": 48.9,
+      "pe_forward": 27.5,
+      "scenarios": {"bear": 65, "base": 87, "bull": 100},
+      "targets": {"bear": 1300, "base": 2175, "bull": 2800},
+      "upside_base_pct": -9.4,
+      "financial_highlight": "2025 EPS NT$49.17 (+132% YoY)、營收 NT$1,396 億。Q4 EPS NT$16.92 創單季新高 (+181% YoY)。Q1 2026 累計營收 NT$490 億 (+110% YoY)，已超越 2025 Q4 全季。客戶含 NVIDIA / AWS / Google / Meta，毛利率站穩 30%+。",
+      "catalysts": [
+        "Google TPU V8 水冷板 2026/Q3 量產，初期市佔 40-45%、貢獻 ~NT$100 億新增營收",
+        "GB300 液冷 Q2-Q3 量產，每櫃熱管理 ASP 較 GB200 +20%",
+        "越南廠水冷板 Q2 2026 月產能擴至 75 萬片（vs 2025 底 20 萬片，5 倍）"
+      ],
+      "risks": [
+        "估值偏紅：forward P/E 27.5x，市值近 1 兆，任何 AI capex 放緩都觸發 de-rating",
+        "雙鴻、Cooler Master 競爭加劇；TPU V8 定價若比 GPU 激進將壓 GM"
+      ],
+      "reason": "奇鋐為 AI 液冷霸主、訂單能見度看到 2028，但現價 NT$2,400 已逼近保守 base case 合理價 NT$2,175；唯有 bull case (TPU+GB300+市佔擴大) 對應 NT$2,800 (+17%)。建議定位為「執行力驗證持股」，逢回 NT$2,000 以下加碼。",
+      "sources_short": "財報狗 / FactSet / 經濟日報 / Morgan Stanley"
+    },
+    {
+      "ticker": "2308",
+      "name": "台達電",
+      "price": 1840,
+      "market_cap_str": "4.78 兆",
+      "pe_trailing": 79.5,
+      "pe_forward": 55.8,
+      "scenarios": {"bear": 28.0, "base": 32.96, "bull": 38.0},
+      "targets": {"bear": 896, "base": 1648, "bull": 2090},
+      "upside_base_pct": -10.4,
+      "financial_highlight": "2025 EPS NT$23.14 (+71% YoY，7 年新高)、營收 NT$5,549 億 (+32%)、GM 34.2%。Q4 EPS NT$6.67 (+142% YoY)。Q1 2026 營收 NT$1,594 億 (+34% YoY，史上次高)。AI 電源 + 液冷占比由 2023 年 2-3% 升至 2025 年 20-30%。",
+      "catalysts": [
+        "Q1 2026 法說會 2026/04/30 15:00（全年伺服器電源、液冷指引）",
+        "GB300 PSU 出貨 H1 2026 放量（機櫃需求 2025 約 2 萬 → 2026 上看 14 萬+）",
+        "800V HVDC 提前導入：原訂 2027 量產，H2 2026 已有 hyperscaler pull-in"
+      ],
+      "risks": [
+        "估值極端拉伸：trailing P/E 79x、forward 55x，遠超歷史 18-25x 區間，de-rating 風險高",
+        "EV 業務疲軟：2025 Mobility -31% YoY，管理層示警未來 1-2 年仍弱"
+      ],
+      "reason": "台達電手握 AI 電源 + 液冷 + 800V HVDC 三王牌，2026 EPS 上看 NT$33，4/30 法說 + GB300 出貨為近期催化劑；但本益比 55x 已透支多頭預期，現價 NT$1,840 高於主流外資目標（大摩 1,638、JPM 1,400），bull case NT$2,090 (+14%)。追高風險高、適合逢回 NT$1,500 以下分批進場。",
+      "sources_short": "財報狗 / 經濟日報 / Morgan Stanley / FactSet"
+    }
+  ]
+}
