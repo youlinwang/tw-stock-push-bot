@@ -50,6 +50,60 @@ Daily push runs from a **cloud RemoteTrigger** (cron `0 0 * * *` UTC ≈ 08:04 T
 - Every push ends with a disclaimer embed stating this is AI-generated and **not investment advice** — keep it.
 - Default notification channel is **Discord webhook** (user preference: no LINE, no OAuth flows).
 
+## Pick selection methodology
+
+Applies to any flow that produces a fresh `picks.json` (local run, cloud trigger, subagent pipeline). Rules are methodology-only — no hard-coded tickers or sector quotas.
+
+### Universe
+- Default: **台灣50 (0050) + 中型100 (0051)** constituent union (~150 tickers). Override only with explicit user instruction.
+- Fetch constituent list from 元大投信 / wantgoo / pocket at run-time; store a dated `universe_YYYY-MM-DD.txt` snapshot for traceability.
+
+### Per-ticker rank card (required fields)
+For every ticker in the universe produce a card with: `ticker`, `name`, `price` (int NT$), `pe_trailing`, `eps_2026` (2dp), `target_base` (int NT$), `upside_pct = (target_base - price) / price × 100` (1dp), `rating`, `data_quality ∈ {high, med, low}`, `note`, `sources`.
+
+Price and trailing P/E MUST come from the same intra-day snapshot (typically Yahoo Taiwan 股市 or equivalent) to keep them internally consistent. EPS and target must follow the **Source priority** rules below.
+
+### Rating (keyed to Base upside %)
+| Band | Rating | Color |
+|---|---|---|
+| ≥ +20% | 🟢 首選/核心 | 0x00B894 |
+| +10 ~ +19.9% | 🟢 進場 | 0x00B894 |
+| 0 ~ +9.9% | 🟡 偏高 | 0xFDCB6E |
+| -0.1 ~ -10% | 🔴 等回 | 0xD63031 |
+| < -10% | 🔴 追高風險 | 0xD63031 |
+
+The canonical implementation is `rating_for(upside_pct)` in `daily_push.py`. Any downstream builder that computes a rating independently MUST stay consistent with this function.
+
+### Eligibility filter (universe → shortlist)
+Keep only cards that satisfy **all** of:
+1. `rating` starts with 🟢 (首選 or 進場).
+2. `data_quality` ∈ {high, med}.
+3. `upside_pct ≥ 15%`.
+4. Both `eps_2026` and `target_base` are non-null (no bare price-only cards).
+
+### Exclusion categories (shortlist → final picks)
+Remove any shortlist entry that falls into any of these categories; do not silently keep them just to fill the slate. Record the reason per excluded ticker for traceability.
+- **Stale target**: price has moved well past the consensus target in either direction, or the consensus hasn't been re-marked after a meaningful corporate event.
+- **Extreme analyst dispersion**: target range is so wide (>2× min-to-max) that the midpoint carries little signal; treat single-outlier targets as not a consensus.
+- **Single-source target**: only one sell-side house or one blogger; sample too thin to count as consensus.
+- **Loss-making or pre-revenue base**: EPS around zero or negative; ratio-based targets become unstable.
+- **Price / data anomaly**: page returned an obviously wrong price (split/dividend artifact, parse error, zero-volume line).
+- **Possible ex-dividend mismatch**: target and price priced under different dividend assumptions; re-anchor before ranking.
+- **Target pinned to prior fiscal year**: the cited target is a 2025 figure; without a refreshed 2026 target, the upside% comparison is apples-to-oranges.
+- **No 2026 EPS consensus**: only trailing or 2025 EPS available.
+- **Target vs. EPS mismatch**: target number exists but without a matching 2026 EPS projection to back it.
+- **Cyclical industries with low forward visibility**: airlines, shipping, pure commodity cycles — exclude unless a tier 1-3 source explicitly models the current cycle phase.
+- **Material bad news**: 暴雷, 停牌, 董監事事件, SEC/FSC/競爭主管機關調查等。
+
+### Final selection
+- Sort remaining picks by `upside_pct` desc.
+- Take **top 6**, balanced across **大型龍頭 vs 中型成長** (roughly half-half); if the top 6 by pure upside is lopsided, substitute from lower-ranked eligible picks to restore balance rather than drop the size mix rule.
+- Rebuild `picks.json` in the schema documented above; `meta.theme` records the universe and the sort key; each pick's `sources_short` lists tier 1-3 URLs (tag otherwise per **Source priority**).
+
+### Fresh evaluation, daily
+- Do not anchor to yesterday's picks; re-run the pipeline from scratch each day.
+- Cache is fine for constituent lists and long-shelf-life filings; do not cache rank cards or final picks.
+
 ## Source priority for picks research
 
 All future `picks.json` (whether generated locally or by the cloud trigger) MUST ground every number in **primary sources** in this priority order:
