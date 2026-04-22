@@ -1,0 +1,2305 @@
+{
+  "date": "2026-04-22",
+  "n_total": 149,
+  "n_eligible": 29,
+  "excluded_tickers": [
+    "8464",
+    "6409",
+    "1503",
+    "1605",
+    "8454",
+    "6176",
+    "2377",
+    "2609",
+    "6442",
+    "6770",
+    "1402",
+    "2618",
+    "3706"
+  ],
+  "cards": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "price": 2070,
+      "pe_trailing": 31.36,
+      "eps_2026": 90.0,
+      "target_base": 2200,
+      "upside_pct": 6.3,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "外資共識區間2000-2600；高盛上調至2600；Fwd PE~23x",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2308",
+      "name": "台達電",
+      "price": 1900,
+      "pe_trailing": null,
+      "eps_2026": 40.0,
+      "target_base": 2100,
+      "upside_pct": 10.5,
+      "rating": "🟢 進場",
+      "data_quality": "med",
+      "note": "日系喊2440元；2026EPS預估40-46；AI HVDC/液冷動能",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "price": 212,
+      "pe_trailing": null,
+      "eps_2026": 17.79,
+      "target_base": 350,
+      "upside_pct": 65.1,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "GS 400/大摩樂觀444；EPS 2026約17.79-19.06；AI伺服器機櫃動能",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "price": 2090,
+      "pe_trailing": null,
+      "eps_2026": 63.51,
+      "target_base": 2094,
+      "upside_pct": 0.2,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "Factset中位目標2094；美系上調至2454；ASIC放量動能",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "3711",
+      "name": "日月光投控",
+      "price": 442,
+      "pe_trailing": null,
+      "eps_2026": 14.6,
+      "target_base": 400,
+      "upside_pct": -9.5,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "瑞銀/花旗400；廣發420；EPS 2026估14.6-14.85；LEAP先進封裝翻倍",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2891",
+      "name": "中信金",
+      "price": 54,
+      "pe_trailing": null,
+      "eps_2026": 3.79,
+      "target_base": 49,
+      "upside_pct": -9.3,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "Factset目標49",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2345",
+      "name": "智邦",
+      "price": 2005,
+      "pe_trailing": null,
+      "eps_2026": 62.0,
+      "target_base": 1700,
+      "upside_pct": -15.2,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "大摩1620/大和1500/麥格理1900",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2383",
+      "name": "台光電",
+      "price": 3950,
+      "pe_trailing": null,
+      "eps_2026": 74.68,
+      "target_base": 3200,
+      "upside_pct": -19.0,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "Factset中位3200；高盛2060/統一3800",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2382",
+      "name": "廣達",
+      "price": 329,
+      "pe_trailing": null,
+      "eps_2026": 22.0,
+      "target_base": 366,
+      "upside_pct": 11.2,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "Factset目標366；大摩330/金控360；AI伺服器",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2881",
+      "name": "富邦金",
+      "price": 89,
+      "pe_trailing": null,
+      "eps_2026": 6.94,
+      "target_base": 95,
+      "upside_pct": 6.7,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "均值目標94.85",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2882",
+      "name": "國泰金",
+      "price": 73,
+      "pe_trailing": null,
+      "eps_2026": 6.24,
+      "target_base": 71,
+      "upside_pct": -2.7,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "Factset目標70.5",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2303",
+      "name": "聯電",
+      "price": 68,
+      "pe_trailing": null,
+      "eps_2026": 3.31,
+      "target_base": 46,
+      "upside_pct": -32.4,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "Factset 45.75；股價明顯超前基本面",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "3017",
+      "name": "奇鋐",
+      "price": 2490,
+      "pe_trailing": null,
+      "eps_2026": 64.6,
+      "target_base": 1950,
+      "upside_pct": -21.7,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "大和1945/1875；本土投顧1950",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2360",
+      "name": "致茂",
+      "price": 2020,
+      "pe_trailing": null,
+      "eps_2026": 34.16,
+      "target_base": 1648,
+      "upside_pct": -18.4,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "Factset最新目標1647.5",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2887",
+      "name": "台新新光金",
+      "price": 24,
+      "pe_trailing": null,
+      "eps_2026": 2.16,
+      "target_base": 24,
+      "upside_pct": 0.0,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "投顧維持中立",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2412",
+      "name": "中華電",
+      "price": 138,
+      "pe_trailing": null,
+      "eps_2026": 4.81,
+      "target_base": 132,
+      "upside_pct": -4.3,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "Factset均值目標132.33",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2884",
+      "name": "玉山金",
+      "price": 33,
+      "pe_trailing": null,
+      "eps_2026": 2.28,
+      "target_base": 36,
+      "upside_pct": 9.1,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "Factset目標36.15",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2885",
+      "name": "元大金",
+      "price": 51,
+      "pe_trailing": null,
+      "eps_2026": 2.5,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "未找到2026券商共識目標",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2886",
+      "name": "兆豐金",
+      "price": 40,
+      "pe_trailing": null,
+      "eps_2026": 2.46,
+      "target_base": 42,
+      "upside_pct": 5.0,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "Factset目標42",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2890",
+      "name": "永豐金",
+      "price": 32,
+      "pe_trailing": null,
+      "eps_2026": 2.05,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "未找到2026券商共識目標價",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2357",
+      "name": "華碩",
+      "price": 599,
+      "pe_trailing": null,
+      "eps_2026": 48.7,
+      "target_base": 615,
+      "upside_pct": 2.7,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "Factset目標615；大摩下修500",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "3231",
+      "name": "緯創",
+      "price": 141,
+      "pe_trailing": null,
+      "eps_2026": 13.18,
+      "target_base": 180,
+      "upside_pct": 27.7,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "Factset目標180；法人最高215；L10伺服器2026年增130%",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2327",
+      "name": "國巨",
+      "price": 320,
+      "pe_trailing": null,
+      "eps_2026": 16.1,
+      "target_base": 300,
+      "upside_pct": -6.3,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "法人目標300",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "1303",
+      "name": "南亞",
+      "price": 88,
+      "pe_trailing": null,
+      "eps_2026": 4.62,
+      "target_base": 82,
+      "upside_pct": -6.8,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "Factset目標81.5",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "1216",
+      "name": "統一",
+      "price": 73,
+      "pe_trailing": null,
+      "eps_2026": 3.92,
+      "target_base": 90,
+      "upside_pct": 23.3,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "Factset目標90；法人92；連27年配息",
+      "sources": [
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "6669",
+      "name": "緯穎",
+      "price": 4220,
+      "pe_trailing": 15.34,
+      "eps_2026": 325.86,
+      "target_base": 5950,
+      "upside_pct": 41.0,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 18位分析師中位數；野村目標價6670元",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3653",
+      "name": "健策",
+      "price": 5370,
+      "pe_trailing": 149.33,
+      "eps_2026": 63.38,
+      "target_base": 4575,
+      "upside_pct": -14.8,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 9位分析師；股價已超過共識目標",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2880",
+      "name": "華南金",
+      "price": 35,
+      "pe_trailing": 18.55,
+      "eps_2026": 2.0,
+      "target_base": 38,
+      "upside_pct": 7.8,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "官股金控，中長線目標38元；2026/1月EPS創高",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2892",
+      "name": "第一金",
+      "price": 29,
+      "pe_trailing": 15.4,
+      "eps_2026": 1.95,
+      "target_base": 29,
+      "upside_pct": -0.7,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "法人中立；合理價約28.61元；2026配息率拉升至60%",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2883",
+      "name": "凱基金",
+      "price": 21,
+      "pe_trailing": 12.78,
+      "eps_2026": 2.33,
+      "target_base": 20,
+      "upside_pct": -3.4,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "2026 EPS估2.22-2.45元；PBR 1.2x給20元",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2368",
+      "name": "金像電",
+      "price": 1225,
+      "pe_trailing": 64.44,
+      "eps_2026": 18.97,
+      "target_base": 755,
+      "upside_pct": -38.4,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "FactSet目標價明顯落後股價；PCB千金股",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2449",
+      "name": "京元電子",
+      "price": 281,
+      "pe_trailing": 31.19,
+      "eps_2026": 10.6,
+      "target_base": 158,
+      "upside_pct": -43.8,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "外資目標價140-158元，股價領先基本面",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2344",
+      "name": "華邦電",
+      "price": 91,
+      "pe_trailing": 103.52,
+      "eps_2026": 7.5,
+      "target_base": 120,
+      "upside_pct": 32.0,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "DDR4缺口；2026 EPS估6.3-7.5元；目標120.3元",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2301",
+      "name": "光寶科",
+      "price": 172,
+      "pe_trailing": 25.75,
+      "eps_2026": 8.66,
+      "target_base": 221,
+      "upside_pct": 28.5,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 11位分析師；AI電源動能",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "5880",
+      "name": "合庫金",
+      "price": 24,
+      "pe_trailing": 17.32,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "2026 EPS/目標價共識未揭露；官股金控、連14年配息",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2408",
+      "name": "南亞科",
+      "price": 220,
+      "pe_trailing": 103.29,
+      "eps_2026": 33.16,
+      "target_base": 245,
+      "upside_pct": 11.4,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "HBM/DDR4漲價；凱基目標365，大和245，中位數",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2603",
+      "name": "長榮",
+      "price": 202,
+      "pe_trailing": 6.36,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "2026 EPS共識不明；2026 3月營收年減17.82%",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2002",
+      "name": "中鋼",
+      "price": 20,
+      "pe_trailing": null,
+      "eps_2026": 0.07,
+      "target_base": 23,
+      "upside_pct": 16.5,
+      "rating": "🟢 進場",
+      "data_quality": "med",
+      "note": "FactSet目標價23元，EPS預估區間-0.07~0.42元",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3008",
+      "name": "大立光",
+      "price": 2645,
+      "pe_trailing": 16.51,
+      "eps_2026": 174.66,
+      "target_base": 3130,
+      "upside_pct": 18.3,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "CPO光通訊題材；統一3500、中信3130、元大3200",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "3661",
+      "name": "世芯-KY",
+      "price": 3985,
+      "pe_trailing": 57.86,
+      "eps_2026": 128.85,
+      "target_base": 4500,
+      "upside_pct": 12.9,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "FactSet 16位分析師中位數",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "7769",
+      "name": "鴻勁",
+      "price": 4465,
+      "pe_trailing": 64.98,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "2026共識目標價未公開；2025 EPS 75.71元，3月營收年增111%",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "1301",
+      "name": "台塑",
+      "price": 52,
+      "pe_trailing": null,
+      "eps_2026": 0.13,
+      "target_base": 53,
+      "upside_pct": 2.3,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "FactSet EPS中位數0.13元；分歧大(-1.61~0.72)",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2059",
+      "name": "川湖",
+      "price": 3855,
+      "pe_trailing": 37.34,
+      "eps_2026": 134.07,
+      "target_base": 4750,
+      "upside_pct": 23.2,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "摩根士丹利2026 EPS134元×35x=4750目標",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "4904",
+      "name": "遠傳",
+      "price": 96,
+      "pe_trailing": 25.09,
+      "eps_2026": 3.8,
+      "target_base": 75,
+      "upside_pct": -21.5,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "FactSet 5位分析師中位數目標價75元",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3045",
+      "name": "台灣大",
+      "price": 114,
+      "pe_trailing": 23.79,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "2026共識EPS/目標價未公開；2025 EPS 4.77元",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2395",
+      "name": "研華",
+      "price": 365,
+      "pe_trailing": 29.8,
+      "eps_2026": 14.04,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "2026 EPS估14.04元年增14.6%；明確目標價未見",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "2207",
+      "name": "和泰車",
+      "price": 51811,
+      "pe_trailing": 15.27,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "Yahoo顯示價格5萬疑為資料異常；2026共識目標價未公開",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "6919",
+      "name": "康霈",
+      "price": 112,
+      "pe_trailing": null,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": "🟡 偏高",
+      "data_quality": "low",
+      "note": "生技虧損中；2026Q1 EPS -0.07元；無共識目標",
+      "sources": [
+        "yahoo",
+        "search-summary"
+      ]
+    },
+    {
+      "ticker": "6505",
+      "name": "台塑化",
+      "price": 53,
+      "pe_trailing": 50.96,
+      "eps_2026": 1.27,
+      "target_base": 57,
+      "upside_pct": 6.6,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "FactSet目標價56.5元；煉油利差改善",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3037",
+      "name": "欣興",
+      "price": 710,
+      "pe_trailing": 164.35,
+      "eps_2026": 11.53,
+      "target_base": 560,
+      "upside_pct": -21.1,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 22位分析師；股價已大幅超越目標",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3665",
+      "name": "貿聯-KY",
+      "price": 2425,
+      "pe_trailing": 52.51,
+      "eps_2026": 72.39,
+      "target_base": 1805,
+      "upside_pct": -25.6,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "元大目標1750, Investing平均1805",
+      "sources": [
+        "cmoney",
+        "investing"
+      ]
+    },
+    {
+      "ticker": "2313",
+      "name": "華通",
+      "price": 255,
+      "pe_trailing": 46.19,
+      "eps_2026": 7.77,
+      "target_base": 240,
+      "upside_pct": -5.9,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "FactSet 210, 法人上調至240",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2379",
+      "name": "瑞昱",
+      "price": 551,
+      "pe_trailing": 19.25,
+      "eps_2026": 31.27,
+      "target_base": 590,
+      "upside_pct": 7.1,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "FactSet 21位分析師中位目標580-590",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3034",
+      "name": "聯詠",
+      "price": 416,
+      "pe_trailing": 15.46,
+      "eps_2026": 27.69,
+      "target_base": 390,
+      "upside_pct": -6.2,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "FactSet 20位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3036",
+      "name": "文曄",
+      "price": 218,
+      "pe_trailing": 22.47,
+      "eps_2026": 15.02,
+      "target_base": 223,
+      "upside_pct": 2.3,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "富邦EPS 15.02；FactSet 目標範圍192-223",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6515",
+      "name": "穎崴",
+      "price": 10715,
+      "pe_trailing": 230.83,
+      "eps_2026": 91.32,
+      "target_base": 7403,
+      "upside_pct": -30.9,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 目標最新7402.5",
+      "sources": [
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "3443",
+      "name": "創意",
+      "price": 3735,
+      "pe_trailing": 132.78,
+      "eps_2026": 43.22,
+      "target_base": 2920,
+      "upside_pct": -21.8,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "FactSet 2697.5；大摩3288, 大和2920, 中信3600",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3481",
+      "name": "群創",
+      "price": 26,
+      "pe_trailing": 866.67,
+      "eps_2026": null,
+      "target_base": 26,
+      "upside_pct": 0.0,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "FactSet 目標中位數25.8；獲利疲弱",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3533",
+      "name": "嘉澤",
+      "price": 2635,
+      "pe_trailing": 37.5,
+      "eps_2026": 68.17,
+      "target_base": 1700,
+      "upside_pct": -35.5,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "FactSet 1565-1600, 大和1700",
+      "sources": [
+        "line"
+      ]
+    },
+    {
+      "ticker": "6770",
+      "name": "力積電",
+      "price": 54,
+      "pe_trailing": null,
+      "eps_2026": null,
+      "target_base": 77,
+      "upside_pct": 42.6,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "FactSet 5 analysts 目標77 (範圍28-115)；仍虧損中,風險高,應排除",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6446",
+      "name": "藥華藥",
+      "price": 651,
+      "pe_trailing": 47.83,
+      "eps_2026": 20.14,
+      "target_base": 850,
+      "upside_pct": 30.6,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "Ropeg擴張ET適應症審查；目標850-1060",
+      "sources": [
+        "vocus",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "5871",
+      "name": "中租-KY",
+      "price": 118,
+      "pe_trailing": 11.04,
+      "eps_2026": null,
+      "target_base": 135,
+      "upside_pct": 14.4,
+      "rating": "🟢 進場",
+      "data_quality": "med",
+      "note": "Investing 12M平均135",
+      "sources": [
+        "investing"
+      ]
+    },
+    {
+      "ticker": "1101",
+      "name": "台泥",
+      "price": 25,
+      "pe_trailing": null,
+      "eps_2026": 1.5,
+      "target_base": 27,
+      "upside_pct": 8.0,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "法人2026 EPS 1.4-1.57；目標26-28",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "3044",
+      "name": "健鼎",
+      "price": 444,
+      "pe_trailing": 22.83,
+      "eps_2026": 24.33,
+      "target_base": 420,
+      "upside_pct": -5.4,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "富邦EPS 23.25目標374；康和EPS 24.33目標466",
+      "sources": [
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "4958",
+      "name": "臻鼎-KY",
+      "price": 315,
+      "pe_trailing": 49.61,
+      "eps_2026": null,
+      "target_base": 260,
+      "upside_pct": -17.5,
+      "rating": "🔴 追高風險",
+      "data_quality": "low",
+      "note": "FactSet 185；技術中線260-270",
+      "sources": [
+        "line"
+      ]
+    },
+    {
+      "ticker": "1326",
+      "name": "台化",
+      "price": 51,
+      "pe_trailing": null,
+      "eps_2026": 0.51,
+      "target_base": 48,
+      "upside_pct": -5.9,
+      "rating": "🔴 等回",
+      "data_quality": "low",
+      "note": "FactSet 47.5；獲利復甦緩慢",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2801",
+      "name": "彰銀",
+      "price": 21,
+      "pe_trailing": 14.21,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "券商2026預估有限",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "5876",
+      "name": "上海商銀",
+      "price": 40,
+      "pe_trailing": 13.01,
+      "eps_2026": 3.3,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "未找到明確目標價",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "4938",
+      "name": "和碩",
+      "price": 84,
+      "pe_trailing": 15.64,
+      "eps_2026": 5.79,
+      "target_base": 76,
+      "upside_pct": -9.5,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "FactSet 9位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "1590",
+      "name": "亞德客-KY",
+      "price": 1265,
+      "pe_trailing": 30.12,
+      "eps_2026": 52.3,
+      "target_base": 1240,
+      "upside_pct": -2.0,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "高盛目標1240",
+      "sources": [
+        "udn"
+      ]
+    },
+    {
+      "ticker": "2404",
+      "name": "漢唐",
+      "price": 1000,
+      "pe_trailing": 20.79,
+      "eps_2026": 50.56,
+      "target_base": 1160,
+      "upside_pct": 16.0,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "群益目標1160",
+      "sources": [
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "3702",
+      "name": "大聯大",
+      "price": 103,
+      "pe_trailing": 17.03,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無明確2026目標價",
+      "sources": [
+        "vocus"
+      ]
+    },
+    {
+      "ticker": "6239",
+      "name": "力成",
+      "price": 213,
+      "pe_trailing": 28.44,
+      "eps_2026": 10.9,
+      "target_base": 215,
+      "upside_pct": 0.9,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "法人EPS上看11；目標200-220",
+      "sources": [
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "2912",
+      "name": "統一超",
+      "price": 237,
+      "pe_trailing": 21.94,
+      "eps_2026": 11.29,
+      "target_base": 302,
+      "upside_pct": 27.4,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 目標290-303",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2376",
+      "name": "技嘉",
+      "price": 288,
+      "pe_trailing": 15.85,
+      "eps_2026": 23.22,
+      "target_base": 300,
+      "upside_pct": 4.0,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "FactSet 13位分析師2026 EPS中位23.22，目標價中位300元",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2324",
+      "name": "仁寶",
+      "price": 31,
+      "pe_trailing": 22.79,
+      "eps_2026": 1.45,
+      "target_base": 30,
+      "upside_pct": -3.2,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "FactSet 2026 EPS下修至1.45元",
+      "sources": [
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "1519",
+      "name": "華城",
+      "price": 919,
+      "pe_trailing": 65.69,
+      "eps_2026": 21.16,
+      "target_base": 1017,
+      "upside_pct": 10.7,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "FactSet 2026 EPS 21.16，目標1017.5；訂單能見度2028",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "8046",
+      "name": "南電",
+      "price": null,
+      "pe_trailing": null,
+      "eps_2026": 9.88,
+      "target_base": 497,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "Yahoo頁面價格解析異常",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2615",
+      "name": "萬海",
+      "price": 74,
+      "pe_trailing": 6.6,
+      "eps_2026": null,
+      "target_base": 82,
+      "upside_pct": 10.8,
+      "rating": "🟢 進場",
+      "data_quality": "med",
+      "note": "12個月目標價中位82.5",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "2834",
+      "name": "臺企銀",
+      "price": 16,
+      "pe_trailing": 13.13,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無2026共識",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "2356",
+      "name": "英業達",
+      "price": 47,
+      "pe_trailing": 19.57,
+      "eps_2026": 3.02,
+      "target_base": 48,
+      "upside_pct": 2.1,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "目標48；12月均值46.75",
+      "sources": [
+        "pocket",
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "3189",
+      "name": "景碩",
+      "price": 473,
+      "pe_trailing": 135.67,
+      "eps_2026": 7.84,
+      "target_base": 394,
+      "upside_pct": -16.7,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 14位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6442",
+      "name": "光聖",
+      "price": 2340,
+      "pe_trailing": 102.41,
+      "eps_2026": null,
+      "target_base": 3000,
+      "upside_pct": 28.2,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "目標價分歧極大：Aletheia 3000 vs 另一投顧550；數字脆弱,應排除",
+      "sources": [
+        "pocket",
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "1605",
+      "name": "華新",
+      "price": 32,
+      "pe_trailing": 45.35,
+      "eps_2026": null,
+      "target_base": 50,
+      "upside_pct": 53.1,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "單一券商目標50；資料薄,應排除",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "6415",
+      "name": "矽力-KY",
+      "price": 394,
+      "pe_trailing": 61.66,
+      "eps_2026": 9.5,
+      "target_base": 346,
+      "upside_pct": -12.2,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 16位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2347",
+      "name": "聯強",
+      "price": 84,
+      "pe_trailing": 16.69,
+      "eps_2026": 5.95,
+      "target_base": 82,
+      "upside_pct": -2.4,
+      "rating": "🔴 等回",
+      "data_quality": "high",
+      "note": "3家券商目標80-85",
+      "sources": [
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "2618",
+      "name": "長榮航",
+      "price": 35,
+      "pe_trailing": 7.3,
+      "eps_2026": 4.12,
+      "target_base": 44,
+      "upside_pct": 25.7,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 8位分析師中位目標44.5",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2609",
+      "name": "陽明",
+      "price": 50,
+      "pe_trailing": 10.35,
+      "eps_2026": 4.29,
+      "target_base": 70,
+      "upside_pct": 38.2,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "投顧調升買進目標70；股淨比0.6",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "6805",
+      "name": "富世達",
+      "price": 1915,
+      "pe_trailing": 61.77,
+      "eps_2026": 62.11,
+      "target_base": 2080,
+      "upside_pct": 8.6,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "FactSet 目標2080",
+      "sources": [
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "2474",
+      "name": "可成",
+      "price": 210,
+      "pe_trailing": 17.27,
+      "eps_2026": 20.1,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "未找明確券商目標",
+      "sources": [
+        "findbillion"
+      ]
+    },
+    {
+      "ticker": "2409",
+      "name": "友達",
+      "price": 18,
+      "pe_trailing": 20.77,
+      "eps_2026": 0.47,
+      "target_base": 17,
+      "upside_pct": -5.8,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "FactSet 目標17.65",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6139",
+      "name": "亞翔",
+      "price": null,
+      "pe_trailing": 23.88,
+      "eps_2026": 31.29,
+      "target_base": 700,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "Yahoo頁面價格解析異常",
+      "sources": [
+        "ctee",
+        "wantgoo"
+      ]
+    },
+    {
+      "ticker": "1504",
+      "name": "東元",
+      "price": 63,
+      "pe_trailing": 28.44,
+      "eps_2026": 2.85,
+      "target_base": 80,
+      "upside_pct": 27.0,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 8位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "1102",
+      "name": "亞泥",
+      "price": 35,
+      "pe_trailing": 12.47,
+      "eps_2026": 3.14,
+      "target_base": 40,
+      "upside_pct": 14.3,
+      "rating": "🟢 進場",
+      "data_quality": "med",
+      "note": "2026 EPS估3.14-3.4",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "1402",
+      "name": "遠東新",
+      "price": 26,
+      "pe_trailing": 17.81,
+      "eps_2026": null,
+      "target_base": 34,
+      "upside_pct": 30.8,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "Yahoo 1年目標34.5；無明確2026 EPS共識",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "2353",
+      "name": "宏碁",
+      "price": 28,
+      "pe_trailing": 22.54,
+      "eps_2026": null,
+      "target_base": 26,
+      "upside_pct": -7.1,
+      "rating": "🔴 等回",
+      "data_quality": "med",
+      "note": "FactSet目標26",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2812",
+      "name": "台中銀",
+      "price": 20,
+      "pe_trailing": 13.6,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無明確券商目標",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "2027",
+      "name": "大成鋼",
+      "price": 36,
+      "pe_trailing": 13.01,
+      "eps_2026": 4.29,
+      "target_base": 50,
+      "upside_pct": 35.3,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "元大2026 EPS 4.29，目標50",
+      "sources": [
+        "fugle",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "2385",
+      "name": "群光",
+      "price": 125,
+      "pe_trailing": 13.81,
+      "eps_2026": 10.73,
+      "target_base": 152,
+      "upside_pct": 21.6,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 2026 EPS 10.73，目標152；低PE+AI伺服器電源題材",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2049",
+      "name": "上銀",
+      "price": 301,
+      "pe_trailing": 69.84,
+      "eps_2026": 6.06,
+      "target_base": 244,
+      "upside_pct": -18.9,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet 11位分析師中位目標243.5",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3706",
+      "name": "神達",
+      "price": 85,
+      "pe_trailing": 16.5,
+      "eps_2026": null,
+      "target_base": 123,
+      "upside_pct": 44.7,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "美系外資上修2026目標至123；AI伺服器CAGR 43%",
+      "sources": [
+        "yahoo-news"
+      ]
+    },
+    {
+      "ticker": "8996",
+      "name": "高力",
+      "price": 1215,
+      "pe_trailing": 134.7,
+      "eps_2026": 17.05,
+      "target_base": 1000,
+      "upside_pct": -17.7,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "CLSA目標1000",
+      "sources": [
+        "moneyweekly"
+      ]
+    },
+    {
+      "ticker": "9904",
+      "name": "寶成",
+      "price": 27,
+      "pe_trailing": 6.6,
+      "eps_2026": 4.8,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無正式目標價",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "1476",
+      "name": "儒鴻",
+      "price": 345,
+      "pe_trailing": 17.16,
+      "eps_2026": 23.99,
+      "target_base": 487,
+      "upside_pct": 41.2,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 18位分析師中位目標487",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6285",
+      "name": "啟碁",
+      "price": 250,
+      "pe_trailing": 39.42,
+      "eps_2026": 8.93,
+      "target_base": 180,
+      "upside_pct": -28.0,
+      "rating": "🔴 追高風險",
+      "data_quality": "high",
+      "note": "FactSet目標180",
+      "sources": [
+        "cnyes-factset",
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "2105",
+      "name": "正新",
+      "price": 34,
+      "pe_trailing": 22.33,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無2026共識",
+      "sources": [
+        "statementdog"
+      ]
+    },
+    {
+      "ticker": "2377",
+      "name": "微星",
+      "price": 94,
+      "pe_trailing": 13.79,
+      "eps_2026": 10.4,
+      "target_base": 165,
+      "upside_pct": 75.7,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "FactSet中位目標165；富邦保守95；分歧大",
+      "sources": [
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "8210",
+      "name": "勤誠",
+      "price": 1020,
+      "pe_trailing": 35.92,
+      "eps_2026": 43.96,
+      "target_base": 1250,
+      "upside_pct": 22.5,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 8位分析師；GB300 3家客戶",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "1513",
+      "name": "中興電",
+      "price": 156,
+      "pe_trailing": 19.27,
+      "eps_2026": 9.0,
+      "target_base": 212,
+      "upside_pct": 35.9,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "EPS預估8.8-9.5；目標200-224",
+      "sources": [
+        "nstock"
+      ]
+    },
+    {
+      "ticker": "3023",
+      "name": "信邦",
+      "price": 283,
+      "pe_trailing": 21.7,
+      "eps_2026": 14.71,
+      "target_base": 298,
+      "upside_pct": 5.3,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "FactSet 8位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "8464",
+      "name": "億豐",
+      "price": 379,
+      "pe_trailing": 16.8,
+      "eps_2026": null,
+      "target_base": 490,
+      "upside_pct": 29.3,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "FactSet為2025 EPS基準目標490；2026數據未明確",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2633",
+      "name": "台灣高鐵",
+      "price": 27,
+      "pe_trailing": 22.82,
+      "eps_2026": 1.3,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無券商目標",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "1477",
+      "name": "聚陽",
+      "price": 225,
+      "pe_trailing": 15.32,
+      "eps_2026": 17.07,
+      "target_base": 351,
+      "upside_pct": 56.0,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "FactSet 14位分析師中位EPS 17.07，目標351",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2610",
+      "name": "華航",
+      "price": 18,
+      "pe_trailing": 7.52,
+      "eps_2026": 1.72,
+      "target_base": 21,
+      "upside_pct": 16.7,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "FactSet 9位分析師",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "5434",
+      "name": "崇越",
+      "price": 434,
+      "pe_trailing": 19.97,
+      "eps_2026": 23.23,
+      "target_base": 340,
+      "upside_pct": -21.7,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "12個月均值目標340",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "1802",
+      "name": "台玻",
+      "price": 74,
+      "pe_trailing": null,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "連年虧損",
+      "sources": [
+        "wantgoo"
+      ]
+    },
+    {
+      "ticker": "2354",
+      "name": "鴻準",
+      "price": 53,
+      "pe_trailing": 22.76,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無共識",
+      "sources": [
+        "winvest"
+      ]
+    },
+    {
+      "ticker": "6409",
+      "name": "旭隼",
+      "price": 7730,
+      "pe_trailing": 19.26,
+      "eps_2026": null,
+      "target_base": 1390,
+      "upside_pct": -82.0,
+      "rating": "🔴 追高風險",
+      "data_quality": "low",
+      "note": "價格/目標落差極大，資料可能有誤，排除",
+      "sources": [
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2542",
+      "name": "興富發",
+      "price": 34,
+      "pe_trailing": 16.14,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無共識",
+      "sources": [
+        "pressplay"
+      ]
+    },
+    {
+      "ticker": "7750",
+      "name": "新代",
+      "price": 1940,
+      "pe_trailing": 60.97,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無共識",
+      "sources": [
+        "cnyes"
+      ]
+    },
+    {
+      "ticker": "6531",
+      "name": "愛普",
+      "price": 720,
+      "pe_trailing": 93.14,
+      "eps_2026": 10.4,
+      "target_base": 900,
+      "upside_pct": 25.0,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "美系外資目標900",
+      "sources": [
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "1503",
+      "name": "士電",
+      "price": 198,
+      "pe_trailing": 31.58,
+      "eps_2026": null,
+      "target_base": 277,
+      "upside_pct": 39.9,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "法人33倍PE目標277；重電訂單滿至2027",
+      "sources": [
+        "wantrich"
+      ]
+    },
+    {
+      "ticker": "1229",
+      "name": "聯華",
+      "price": 44,
+      "pe_trailing": 16.98,
+      "eps_2026": 3.2,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "無共識",
+      "sources": [
+        "findbillion"
+      ]
+    },
+    {
+      "ticker": "6176",
+      "name": "瑞儀",
+      "price": 91,
+      "pe_trailing": 9.6,
+      "eps_2026": 10.14,
+      "target_base": 173,
+      "upside_pct": 90.1,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "FactSet EPS 10.14，目標173；Yahoo當日價格疑似除權後偏離共識,需覆核",
+      "sources": [
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "2451",
+      "name": "創見",
+      "price": 266,
+      "pe_trailing": 20.53,
+      "eps_2026": 10.29,
+      "target_base": 192,
+      "upside_pct": -27.7,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "記憶體模組;華南永昌目標價192元,EPS預估10.29;近期EPS衝高但券商目標價仍低於現價",
+      "sources": [
+        "yahoo",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "9945",
+      "name": "潤泰新",
+      "price": 25,
+      "pe_trailing": 6.59,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "資產股;無明確2026券商目標價;2025 EPS年減35%",
+      "sources": [
+        "yahoo",
+        "statementdog"
+      ]
+    },
+    {
+      "ticker": "5269",
+      "name": "祥碩",
+      "price": 1255,
+      "pe_trailing": 17.3,
+      "eps_2026": 72.24,
+      "target_base": 1570,
+      "upside_pct": 25.1,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "USB/PCIe IC;FactSet 10位分析師目標價中位數1570元;AMD合作動能",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "3005",
+      "name": "神基",
+      "price": 101,
+      "pe_trailing": 12.02,
+      "eps_2026": 9.0,
+      "target_base": 146,
+      "upside_pct": 44.6,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "強固型電腦+AI伺服器機櫃;分析師12月目標價均值146;2026 AI業務估+50~100%",
+      "sources": [
+        "yahoo",
+        "yahoo-analysis"
+      ]
+    },
+    {
+      "ticker": "2371",
+      "name": "大同",
+      "price": 32,
+      "pe_trailing": null,
+      "eps_2026": 2.34,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "重電變壓器;僅見長期激進目標82元不可靠;2026 EPS法人均值2.34",
+      "sources": [
+        "yahoo",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "9910",
+      "name": "豐泰",
+      "price": 78,
+      "pe_trailing": 15.29,
+      "eps_2026": 5.57,
+      "target_base": 101,
+      "upside_pct": 29.5,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "Nike代工;FactSet 9位分析師中位數目標101元",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2006",
+      "name": "東和鋼鐵",
+      "price": 70,
+      "pe_trailing": 10.85,
+      "eps_2026": null,
+      "target_base": 72,
+      "upside_pct": 2.6,
+      "rating": "🟡 偏高",
+      "data_quality": "med",
+      "note": "鋼筋龍頭;12M目標價均值72;接近合理價上緣",
+      "sources": [
+        "yahoo",
+        "investing"
+      ]
+    },
+    {
+      "ticker": "2845",
+      "name": "遠東銀",
+      "price": 13,
+      "pe_trailing": 14.59,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "金融股;搜尋無2026明確目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "6789",
+      "name": "采鈺",
+      "price": 504,
+      "pe_trailing": 126.0,
+      "eps_2026": null,
+      "target_base": 375,
+      "upside_pct": -25.6,
+      "rating": "🔴 追高風險",
+      "data_quality": "med",
+      "note": "CIS晶圓級光學;券商目標價區間271-390,中位~375;PE偏高",
+      "sources": [
+        "yahoo",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "1319",
+      "name": "東陽",
+      "price": 79,
+      "pe_trailing": 12.29,
+      "eps_2026": 6.38,
+      "target_base": 120,
+      "upside_pct": 51.9,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "汽車AM件;FactSet目標價120;獲利能見度高",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6472",
+      "name": "保瑞",
+      "price": 417,
+      "pe_trailing": 17.77,
+      "eps_2026": 26.92,
+      "target_base": 685,
+      "upside_pct": 64.3,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "CDMO製藥;FactSet 5位分析師中位數685元",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2915",
+      "name": "潤泰全",
+      "price": 45,
+      "pe_trailing": 4.96,
+      "eps_2026": 9.8,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "資產股;PE僅5倍;無券商明確2026目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "6781",
+      "name": "AES-KY",
+      "price": 1020,
+      "pe_trailing": 26.7,
+      "eps_2026": 52.28,
+      "target_base": 1150,
+      "upside_pct": 12.7,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "BBU模組;2026 EPS估52.28;目標價區間1020-1650,中位~1150;AI資料中心需求",
+      "sources": [
+        "yahoo",
+        "yahoo-news"
+      ]
+    },
+    {
+      "ticker": "1795",
+      "name": "美時",
+      "price": 227,
+      "pe_trailing": 12.64,
+      "eps_2026": 24.41,
+      "target_base": 360,
+      "upside_pct": 58.6,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "學名藥;FactSet 9位分析師中位數目標360.5",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2646",
+      "name": "星宇航空",
+      "price": 21,
+      "pe_trailing": 231.11,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "航空;PE極高獲利微;無明確目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "6191",
+      "name": "精成科",
+      "price": 114,
+      "pe_trailing": 17.99,
+      "eps_2026": 9.0,
+      "target_base": 145,
+      "upside_pct": 27.8,
+      "rating": "🟢 首選",
+      "data_quality": "med",
+      "note": "PCB;法人目標價140-150(中性情境);AI產品比重升",
+      "sources": [
+        "yahoo",
+        "cmoney"
+      ]
+    },
+    {
+      "ticker": "7799",
+      "name": "禾榮科",
+      "price": 407,
+      "pe_trailing": null,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "硼中子俘獲治療;仍虧損;無券商目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "2838",
+      "name": "聯邦銀",
+      "price": 21,
+      "pe_trailing": 15.45,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "金融股;無明確2026目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "2645",
+      "name": "長榮航太",
+      "price": 167,
+      "pe_trailing": 30.49,
+      "eps_2026": 5.57,
+      "target_base": 190,
+      "upside_pct": 14.1,
+      "rating": "🟢 進場",
+      "data_quality": "high",
+      "note": "MRO航太維修;FactSet 8位分析師目標190",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "6526",
+      "name": "達發",
+      "price": 555,
+      "pe_trailing": 32.04,
+      "eps_2026": 17.64,
+      "target_base": 566,
+      "upside_pct": 2.0,
+      "rating": "🟡 偏高",
+      "data_quality": "high",
+      "note": "通訊IC;FactSet中位數目標564-568",
+      "sources": [
+        "yahoo",
+        "sinotrade"
+      ]
+    },
+    {
+      "ticker": "2539",
+      "name": "櫻花建",
+      "price": 45,
+      "pe_trailing": 13.11,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "建設股;無券商2026目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "8454",
+      "name": "富邦媒",
+      "price": 175,
+      "pe_trailing": 15.5,
+      "eps_2026": 11.29,
+      "target_base": 530,
+      "upside_pct": 202.9,
+      "rating": "🟢 首選",
+      "data_quality": "low",
+      "note": "電商;FactSet舊目標530,股價已大跌;upside失真,應視為 stale target,排除於 top 6",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "4583",
+      "name": "台灣精銳",
+      "price": 751,
+      "pe_trailing": 62.5,
+      "eps_2026": 13.8,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "減速機;PE偏高;無券商明確2026目標價",
+      "sources": [
+        "yahoo"
+      ]
+    },
+    {
+      "ticker": "6890",
+      "name": "來億-KY",
+      "price": 170,
+      "pe_trailing": 13.02,
+      "eps_2026": 13.52,
+      "target_base": 222,
+      "upside_pct": 30.6,
+      "rating": "🟢 首選",
+      "data_quality": "high",
+      "note": "鞋類代工;FactSet 12位分析師EPS 13.52,目標200-245中位222",
+      "sources": [
+        "yahoo",
+        "cnyes-factset"
+      ]
+    },
+    {
+      "ticker": "2258",
+      "name": "鴻華先進-創",
+      "price": 29,
+      "pe_trailing": null,
+      "eps_2026": null,
+      "target_base": null,
+      "upside_pct": null,
+      "rating": null,
+      "data_quality": "low",
+      "note": "電動車;2025虧損EPS -0.86;無券商2026目標價;創新板",
+      "sources": [
+        "yahoo"
+      ]
+    }
+  ]
+}

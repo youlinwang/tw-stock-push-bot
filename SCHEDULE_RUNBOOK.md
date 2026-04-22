@@ -40,7 +40,7 @@
 一條命令啟用：
 
 ```cmd
-echo enabled > C:\Users\can20\Documents\Claude\stocks\.local_fallback_enabled && schtasks /Create /TN "TW_Stock_Daily_Push" /TR "C:\Users\can20\Documents\Claude\stocks\run_daily.bat" /SC DAILY /ST 08:30 /F
+echo enabled > C:\Users\can20\OneDrive\other\work\stocks\.local_fallback_enabled && schtasks /Create /TN "TW_Stock_Daily_Push" /TR "C:\Users\can20\OneDrive\other\work\stocks\run_daily.bat" /SC DAILY /ST 08:30 /F
 ```
 
 - 會每日 08:30 Taipei 本機執行 `daily_push.py picks.json`
@@ -50,7 +50,7 @@ echo enabled > C:\Users\can20\Documents\Claude\stocks\.local_fallback_enabled &&
 
 停用備援：
 ```cmd
-del C:\Users\can20\Documents\Claude\stocks\.local_fallback_enabled
+del C:\Users\can20\OneDrive\other\work\stocks\.local_fallback_enabled
 schtasks /Delete /TN "TW_Stock_Daily_Push" /F
 ```
 
