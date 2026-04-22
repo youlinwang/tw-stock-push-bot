@@ -49,3 +49,16 @@ Daily push runs from a **cloud RemoteTrigger** (cron `0 0 * * *` UTC ≈ 08:04 T
 - Currency is NT$ throughout; prices are integers (no decimals), EPS to 2 decimals.
 - Every push ends with a disclaimer embed stating this is AI-generated and **not investment advice** — keep it.
 - Default notification channel is **Discord webhook** (user preference: no LINE, no OAuth flows).
+
+## Source priority for picks research
+
+All future `picks.json` (whether generated locally or by the cloud trigger) MUST ground every number in **primary sources** in this priority order:
+
+1. **原始法人報告 / sell-side analyst reports** (PDF or IR page) — highest weight for target price, 2026/2027 EPS consensus, scenario fan.
+2. **原始財報 / raw financial statements** from 公開資訊觀測站 (MOPS) or company IR — highest weight for trailing P/E, market cap, revenue YoY, gross margin, current-quarter EPS.
+3. **原始法說會資料 / investor-conference materials** (presentation deck, transcript, recording notes) — highest weight for forward guidance, catalysts with dates, management commentary, risk disclosure.
+4. **News coverage / aggregator summaries** (鉅亨網, 經濟日報, UDN, CMoney, 財報狗, etc.) — lower weight; only as leads or colour commentary on top of (1)-(3), never as the sole citation for a number that will appear in a pushed embed.
+
+WebSearch snippets, TradingView / Yahoo Finance summary fields, and FactSet consensus quoted through news articles all count as tier 4 leads — they indicate *where* to look for (1)-(3), but do not substitute for them.
+
+Every pushed pick should have at least one tier-1/2/3 source behind its price, EPS scenarios, and target. Record the source URLs in `sources_short` (or a richer field if introduced later). When a tier-1/2/3 source cannot be obtained, tag the affected field with `[原文取得失敗、此為推論的回答]` or `[尚未閱讀原文、此為推論的回答]` per the global inference-tag convention — do not silently fall back to tier 4.

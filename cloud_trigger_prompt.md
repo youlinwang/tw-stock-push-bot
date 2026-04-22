@@ -284,4 +284,16 @@ except Exception:
 - 推薦理由必須包含具體數字
 - 全部繁體中文
 - **每日獨立評估**：不要參考先前推薦過的清單，每日 fresh evaluation
-- 所有數字必須來自 WebSearch，不可虛構
+
+## 資料來源優先序（Source priority — 硬性規定）
+
+每檔 pick 的 price / EPS 情境 / target / 催化劑 / 風險 都必須以下列優先序取得；**禁止**僅憑新聞摘要就把數字寫進 embed。
+
+1. **原始法人報告**（券商 sell-side report PDF、投顧 IR 頁面）：target price、2026/2027 EPS 共識、scenario fan 的最高權重來源。
+2. **原始財報**（公開資訊觀測站 MOPS、公司 IR 財報）：trailing P/E、市值、營收 YoY、毛利率、近季 EPS 的最高權重來源。
+3. **原始法說會資料**（法說簡報、逐字稿、錄音筆記）：forward guidance、催化劑時程、經營層評論、風險揭露的最高權重來源。
+4. 新聞 / aggregator 摘要（鉅亨、經濟日報、UDN、CMoney、財報狗）：僅作為找到 (1)-(3) 的 lead，不得單獨作為 embed 中數字的唯一引用。
+
+WebSearch 摘要、TradingView / Yahoo Finance summary 欄位、透過新聞引述的 FactSet 共識皆屬 tier 4 lead —— 它們指出去哪裡找 tier 1-3，但不能取代 tier 1-3。
+
+每個 pick 的 price / EPS / target 至少要有一個 tier 1-3 來源；`sources_short` 欄位應列出該 tier 1-3 URL。若取不到 tier 1-3，請在受影響欄位加上 `[原文取得失敗、此為推論的回答]` 或 `[尚未閱讀原文、此為推論的回答]`，**不可靜默退化為 tier 4**。
