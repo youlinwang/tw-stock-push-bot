@@ -6,3 +6,20 @@ __pycache__/
 .venv/
 reports/
 .local_fallback_enabled
+
+# local IDE / tool caches
+.claude/
+.playwright-mcp/
+
+# scratch / intermediate research data
+otc_meta.txt
+twse_candidates.txt
+twse_tables_meta.txt
+pe_*.json
+prices_*.json
+build_picks_2026*.py
+_test_*.py
+_research_partial/
+
+# logs directory
+logs/

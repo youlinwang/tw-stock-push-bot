@@ -39,10 +39,12 @@ def load_env() -> dict[str, str]:
 
 
 def post(payload: dict) -> tuple[int, str]:
-    env = load_env()
-    url = env.get("DISCORD_WEBHOOK_URL")
+    url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not url:
-        raise RuntimeError("DISCORD_WEBHOOK_URL missing in .env")
+        env = load_env()
+        url = env.get("DISCORD_WEBHOOK_URL")
+    if not url:
+        raise RuntimeError("DISCORD_WEBHOOK_URL missing in env / .env")
 
     body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(

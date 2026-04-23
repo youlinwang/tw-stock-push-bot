@@ -8,10 +8,45 @@ Usage:
 from __future__ import annotations
 
 import json
+import os
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from send_discord import send_embeds
+
+_TST = timezone(timedelta(hours=8))
+
+
+def now_stamp() -> str:
+    return datetime.now(_TST).strftime("%Y-%m-%d %H:%M:%S TST")
+
+
+METHODOLOGY_TEXT = (
+    "**🧭 篩選機制（四面向漏斗）**\n\n"
+    "**① 宇宙池（universe）**\n"
+    "每日從 TWSE 官方 openapi (`t187ap03_L`) 取流通股數 × 當日收盤價，對上市+上櫃全市場排序後取**市值前 450 名**。排除 ETF、特別股、全額交割股、警示/處置股、下市中、權證。用意：把分析範圍限制在市場主要流動性標的，避免冷門股的報價/法人研究覆蓋不足問題。\n\n"
+    "**② 技術面**（分兩層獨立檢查）\n"
+    "・**趨勢進入上漲**：5日均線從下方上穿 20日均線，或已在 20MA 上方且斜率向上；同時 RSI(14) ≥ 50（買方力道強於賣方）。用意：只進場於短期均線轉多的初期，避開盤整與下跌趨勢。\n"
+    "・**尚未過熱（避免追高）**：RSI(14) ≤ 70（超買警戒線）＋ 近 5 日累積漲幅 ≤ +15%（過濾急漲）＋ 現價未顯著超越 60 日高點或剛突破且成交量同步放大。用意：排除「已噴出」標的，保留可進場空間。\n\n"
+    "**③ 籌碼面（前一交易日）**\n"
+    "・**投信 OR 外資買超 > 0**：至少一個主動型法人在吸籌。\n"
+    "・**三大法人合計買超 > 0**（含自營避險）：整體機構資金淨流入。用意：確認機構資金正在加碼而非撤退；個股表現與法人動向方向一致時勝率較高。\n\n"
+    "**④ 基本面 & 估值**\n"
+    "2026 EPS 須有法人共識（≥3 位分析師）＋ 12 個月目標價來源為 **tier 1-3**（法人報告 PDF > 財報 MOPS > 法說會逐字稿）；Base upside ≥ +15%；data_quality 非 low。排除類別：stale target（過時目標）、extreme dispersion（分析師分歧 >2×）、single-source（僅一家券商）、loss-making（EPS 負值）、price anomaly（10×/100× parse artifact）、ex-div mismatch、prior-year target、no 2026 consensus、target-EPS mismatch、cyclical low visibility（景氣循環不明）、material bad news（暴雷/停牌/SEC 調查）。\n\n"
+    "**⑤ 最終排序**\n"
+    "blended score = 0.5 × upside%_normalised + 0.3 × chip_strength + 0.2 × technical_momentum → 取 top 5。**若符合條件不足 5 檔則不湊數**（品質優先於數量）。"
+)
+
+METHODOLOGY_TEXT_SHORT = (
+    "🧭 篩選機制\n"
+    "① 宇宙池：TWSE+OTC 市值前 450（排除 ETF/特別股/下市/權證）\n"
+    "② 技術 - 趨勢轉多：5MA↑穿 20MA 且 RSI≥50\n"
+    "② 技術 - 未過熱：RSI≤70、5d漲幅≤15%、未過 60d 高點\n"
+    "③ 籌碼（前日）：投信或外資買超 + 三大法人合計買超\n"
+    "④ 基本面：2026 EPS 共識 + tier-1/2/3 target + upside≥15%\n"
+    "⑤ 排序：0.5×upside + 0.3×chip + 0.2×tech，取 top 5（不湊數）"
+)
 
 ROOT = Path(__file__).resolve().parent
 
@@ -60,15 +95,16 @@ def build_summary_embed(meta: dict, picks: list[dict]) -> dict:
     table = "\n".join(lines)
 
     desc = (
-        f"📅 **報告日期**：{meta['date']}\n"
+        f"📅 **報告日期**：{meta['date']}　⏰ **推送時間**：{now_stamp()}\n"
         f"📈 **大盤狀態**：{meta['taiex']}　YTD {meta['ytd']}\n"
         f"🎯 **主軸**：{meta['theme']}\n\n"
-        f"## 推薦排序（按 Base 上漲空間）\n{table}\n"
+        f"{METHODOLOGY_TEXT}\n\n"
+        f"## 推薦排序（按 blended score）\n{table}\n"
         "**評等說明**\n"
         "🟢 = base case 仍有 ≥10% 空間，可現價分批進場\n"
         "🟡 = 已大幅 re-rate，建議分批承接\n"
-        "🔴 = 估值偏高，建議等回檔（個股建議價位見下）\n\n"
-        "👇 各檔詳細財報、三情境 EPS、目標價、催化劑與風險見以下分則"
+        "🔴 = 估值偏高，建議等回檔\n\n"
+        "👇 各檔詳細財報、三情境 EPS、目標價、催化劑、技術/籌碼訊號見以下分則"
     )
     upcoming = meta.get("upcoming_catalysts")
     if upcoming:
@@ -139,6 +175,30 @@ def build_pick_embed(idx: int, p: dict) -> dict:
             "inline": False,
         },
     ]
+    tech = p.get("technical") or {}
+    chip = p.get("chip_prev_day") or {}
+    if tech:
+        fields.append({
+            "name": "📊 技術面訊號",
+            "value": (
+                f"MA5 {tech.get('ma5','—')} / MA20 {tech.get('ma20','—')}\n"
+                f"RSI(14) {tech.get('rsi14','—')}\n"
+                f"近 5 日漲幅 {tech.get('ret5d_pct','—')}%\n"
+                f"60 日高點 {tech.get('high60d','—')}"
+            )[:1024],
+            "inline": False,
+        })
+    if chip:
+        fields.append({
+            "name": "💰 前一日籌碼（單位：張）",
+            "value": (
+                f"外資 {chip.get('foreign_net','—')}\n"
+                f"投信 {chip.get('trust_net','—')}\n"
+                f"自營 {chip.get('dealer_net','—')}\n"
+                f"三大法人合計 {chip.get('combined_net','—')}"
+            )[:1024],
+            "inline": False,
+        })
     return {
         "title": f"#{idx}  {p['name']} ({p['ticker']})  {rating}",
         "color": color,
@@ -161,7 +221,7 @@ def build_disclaimer_embed() -> dict:
     }
 
 
-def push(picks_file: Path) -> None:
+def push(picks_file: Path, channels: str = "both", strategy_label: str = "台股") -> None:
     data = json.loads(picks_file.read_text(encoding="utf-8"))
     meta = data["meta"]
     picks = data["picks"]
@@ -171,10 +231,47 @@ def push(picks_file: Path) -> None:
         embeds.append(build_pick_embed(i, p))
     embeds.append(build_disclaimer_embed())
 
-    send_embeds(embeds=embeds, content="📬 **台股潛力標的 每日更新**")
-    print(f"sent {len(embeds)} embeds ({len(picks)} picks)")
+    want_discord = channels in ("discord", "both")
+    want_line = channels in ("line", "both")
+
+    if want_discord:
+        send_embeds(embeds=embeds, content=f"📬 **{strategy_label} 潛力標的 每日更新**")
+        print(f"discord: sent {len(embeds)} embeds ({len(picks)} picks)")
+
+    if want_line:
+        # Prefer image push (forwardable in LINE groups) over Flex
+        line_mode = os.environ.get("LINE_MODE", "image")
+        try:
+            if line_mode == "image":
+                from render_picks_image import render as render_img
+                from image_host import upload as upload_img
+                from send_line import push_image
+                from datetime import datetime, timezone, timedelta
+                tst = timezone(timedelta(hours=8))
+                now = datetime.now(tst)
+                out = picks_file.parent / "docs" / "img" / f"{now:%Y-%m-%d}_{now:%H%M}.png"
+                render_img(data, strategy_label, out)
+                backend = os.environ.get("LINE_IMAGE_BACKEND", "github")
+                url = upload_img(out, backend=backend)
+                push_image(url)
+                print(f"line: sent 1 image push (url={url})")
+            else:
+                from line_builders import build_picks_flex
+                from send_line import push_messages
+                msgs = build_picks_flex(data, strategy_label)
+                calls = 0
+                for m in msgs:
+                    calls += push_messages([m])
+                print(f"line: sent {calls} flex push call(s) ({len(picks)} picks, strategy={strategy_label})")
+        except Exception as e:
+            print(f"line: skipped — {type(e).__name__}: {e}")
 
 
 if __name__ == "__main__":
-    picks_path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "picks.json"
-    push(picks_path)
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("picks_file", nargs="?", default=str(ROOT / "picks.json"))
+    ap.add_argument("--channels", default="both", choices=["discord", "line", "both"])
+    ap.add_argument("--strategy", default="台股", help="strategy label shown in embeds/flex")
+    args = ap.parse_args()
+    push(Path(args.picks_file), channels=args.channels, strategy_label=args.strategy)

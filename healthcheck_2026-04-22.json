@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "date": "2026-04-22",
+    "taiex": "N/A (not fetched this run)",
+    "n_holdings": 1,
+    "generated_at": "2026-04-22T09:30:00+08:00",
+    "note": "Price sanity: Yahoo 股市 NT$134.52 + cnyes NT$134.50 cross-verified (delta <0.1% ✓). TTM EPS -1.77元 (loss-making) → loss-making exclusion triggered per CLAUDE.md → forced 🔴. Forward FactSet consensus 2026 EPS NT$6.38 (10 analysts, 2026-04-01) and target NT$149 (median) / NT$167.5 (most recent 2026-04-22 update) are tier-4 aggregated data [尚未閱讀原文、此為推論的回答] — no tier-1/2/3 sell-side PDF obtained."
+  },
+  "holdings": [
+    {
+      "ticker": "2337",
+      "name": "旺宏",
+      "type": "stock",
+      "price": 134,
+      "price_note": "NT$134.50 on 2026-04-22; Yahoo 股市 NT$134.52 (+1.51%), cnyes NT$134.50 (+1.51%) — cross-verified, delta <0.1% ✓. Used NT$134 (rounded integer per schema).",
+      "pe_trailing": null,
+      "pe_trailing_note": "TTM EPS = -1.77元 (2025全年；Q4 2025 = -0.15元，虧損大幅收斂但累計仍負)；P/E undefined (loss-making)。Yahoo股市與cnyes均顯示 '--'。",
+      "eps_2026": 6.38,
+      "eps_2026_note": "[尚未閱讀原文、此為推論的回答] FactSet 2026-04-01調查 10位分析師中位數 NT$6.38（較前次6.26上修）；範圍2.15~30元，離散度極大（最高/最低 = 14×）。另一外資券商（來源：CMoney法說報導）維持2026 EPS NT$4.90、上修2027至NT$10.3。尚未取得任何tier-1/2/3 sell-side PDF，數字源自cnyes FactSet彙整頁（tier-4）。",
+      "target_base": 149,
+      "target_note": "[尚未閱讀原文、此為推論的回答] FactSet 2026-03-01 10位分析師共識中位數 NT$149；2026-04-08單筆更新 NT$157；2026-04-22最新單筆 NT$167.5（EPS估NT$7.31）。採用NT$149作為保守多分析師共識；NT$167.5為最新但單一更新，未確認是否反映全分析師共識。目標價範圍 121~167.5 (1.38× min-to-max，未達極端離散排除門檻2×)。來源：cnyes外資評等彙整頁（tier-4聚合）。",
+      "upside_pct": 10.8,
+      "upside_pct_note": "(149 - 134) / 134 × 100 = +11.2%；若採167.5目標則 +24.9%。標記10.8%（以NT$134.50計算保守共識NT$149）。",
+      "rating": "🔴 出場/觀望",
+      "color": 14102529,
+      "rationale": "旺宏2025全年TTM EPS為-1.77元（連虧9季；2024全年-1.73元、2025全年-1.77元），雖Q4 2025虧損收斂至-0.15元且Q1 2026營收年增70.58%（月增45.94%），基本面轉機訊號明確，但截至本次健檢日trailing EPS仍為負值。依CLAUDE.md持股健檢規則：「若 EPS 仍負，觸發 loss-making exclusion → force 🔴」。評等強制設為🔴出場/觀望。\n\n補充說明（非投資建議）：FactSet 10位分析師共識2026 EPS中位數NT$6.38（2026-04-01，上修中），最新單筆目標NT$167.5（2026-04-22）；以保守共識目標NT$149計upside +10.8%，若採NT$167.5則+24.9%。法說會（2026-01-27）揭示NT$220億資本支出擴充12吋廠月產能20K→30K片，Q4 2025毛利率回升至24.2%，Nintendo Switch 2供應鏈入列，MLC NAND / eMMC短缺延伸至2027。若Q1 2026財報確認EPS轉正（預計2026年5月揭露），排除條件可望解除，應重新評估。",
+      "exclusion_flags": [
+        "Loss-making trailing EPS: 2025全年 -1.77元（連虧9季）；P/E undefined — ratio-based targets unstable → forced 🔴 per CLAUDE.md healthcheck rules",
+        "No tier-1/2/3 sell-side PDF obtained: target NT$149 and EPS NT$6.38 are FactSet aggregates via cnyes (tier-4); tagged [尚未閱讀原文、此為推論的回答]",
+        "EPS estimate extreme dispersion: 2.15~30元（14× min-to-max ratio）— forward EPS unreliable as single-value anchor",
+        "Q1 2026 EPS not yet published (expected 2026-05); TTM still negative at check date"
+      ],
+      "catalysts": [
+        "Q1 2026營收NT$104.69億（年增70.58%），連續3個月強勁成長 — 轉盈前兆",
+        "Q4 2025毛利率回升至24.2%，虧損大幅收斂至-0.15元/股",
+        "NT$220億資本支出：12吋廠月產能20K→30K片（已董事會核准）",
+        "Nintendo Switch 2供應鏈入列 — 車用、工控、高階消費電子需求回溫",
+        "MLC NAND / eMMC供應短缺預估延伸至2027；旺宏為主要NOR Flash廠具寡占地位",
+        "FactSet 10位分析師共識2026 EPS中位數NT$6.38（2026-04-01，持續上修）"
+      ],
+      "risks": [
+        "TTM EPS仍為-1.77元；轉盈時程若延後，估值壓力大（現價NT$134.50，P/B已在偏貴區）",
+        "EPS共識離散度極大（2.15~30元）：10位分析師預估分歧嚴重，forward EPS可信度受限",
+        "2026-04初股價已自1月法說後急漲（1月底~4月+76%），追高風險顯著",
+        "12吋廠擴產投資巨大，若記憶體景氣反轉或客戶需求不如預期，折舊負擔沉重",
+        "中美貿易關稅升溫（2025年以來持續）：客戶庫存調整風險",
+        "NOR Flash市場競爭：GigaDevice（中國）低價競爭仍在"
+      ],
+      "action": "🔴 出場/觀望（規則強制）— trailing EPS仍負，loss-making exclusion觸發。建議等待：① Q1 2026財報確認EPS轉正（預計2026-05揭露）；② 取得至少一份tier-1/2/3 sell-side PDF含2026 EPS與目標價後重評。若Q1 2026 EPS轉正且tier-1/2/3目標確認，以保守目標NT$149計upside +10.8%將升評至🟢 續抱；若採最新NT$167.5目標則upside +24.9%，符合🟢 加碼標準。",
+      "sources_short": "價格: Yahoo股市 NT$134.52 + cnyes NT$134.50 (2026-04-22, 雙源交叉確認 <0.1% delta ✓); 季度EPS: wantgoo.com/stock/2337/financial-statements/eps (2024全年-1.73、2025全年-1.77元); FactSet共識(tier-4聚合): [尚未閱讀原文、此為推論的回答] news.cnyes.com/news/id/6404660 (10位分析師中位數NT$6.38, target NT$149, 2026-04-01); 外資評等: [尚未閱讀原文、此為推論的回答] cnyes.com/twstock/foreignrating.aspx?code=2337 (最新2026-04-22 target NT$167.5); 法說驚艷報導: [尚未閱讀原文、此為推論的回答] cmnews.com.tw/article/newsyoudeservetoknow-ff09546d-fc10-11f0-b2d1-0c7fd741dcce"
+    }
+  ]
+}

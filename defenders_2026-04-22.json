@@ -1,0 +1,865 @@
+{
+  "meta": {
+    "date": "2026-04-22",
+    "strategy": "防禦龍頭",
+    "universe": "TWSE 上市產業分類全部32個類別成分股（共1074檔上市股票）",
+    "taiex_close": 37878.47,
+    "sectors_fetched": 32,
+    "n_leaders": 10,
+    "n_no_leader": 22,
+    "generated_at": "2026-04-22T10:00:00+08:00",
+    "source_quality_note": "EPS/目標價主要來自tier-4(FactSet via cnyes/新聞)推論，已標記[tier-4推論、尚未閱讀原文]。中華電信2026 EPS採company guidance(tier-3)。法人原始報告PDF(tier-1)未逐一取得，所有數值請以最新券商報告確認。",
+    "sectors_file": "sectors_twse_2026-04-22.txt"
+  },
+  "sectors": [
+    {
+      "sector": "水泥工業",
+      "n_constituents": 7,
+      "runner_ups": [
+        {
+          "ticker": "1104",
+          "name": "環泥",
+          "reason_excluded": "市值僅20B規模不足"
+        },
+        {
+          "ticker": "1101",
+          "name": "台泥",
+          "reason_excluded": "2025年虧損 loss-making base"
+        }
+      ],
+      "leader": {
+        "ticker": "1102",
+        "name": "亞泥",
+        "price": 35.65,
+        "pe_trailing": 12.6,
+        "eps_2026": 3.25,
+        "target_base": 40,
+        "upside_base_pct": 12.2,
+        "rating": "🟢 進場",
+        "data_quality": "med",
+        "financial_highlight": "連43年穩定配息，PE歷史低位PBR=0.67x，水泥需求底部回穩",
+        "catalysts": [
+          "水泥需求底部回穩",
+          "大陸廠持續貢獻ROE"
+        ],
+        "risks": [
+          "水泥需求長期L型",
+          "中國競爭加劇"
+        ],
+        "reason": "水泥業市值第二，台泥虧損無EPS。亞泥PE 12.6x低估值，2026E EPS=3.1-3.4元，殖利率>6.5%",
+        "sources_short": [
+          "[tier-4推論] wantrich.chinatimes.com 亞泥目標40元",
+          "tier-2: MOPS財報 https://mops.twse.com.tw"
+        ]
+      }
+    },
+    {
+      "sector": "食品工業",
+      "n_constituents": 25,
+      "runner_ups": [
+        {
+          "ticker": "1229",
+          "name": "聯華",
+          "reason_excluded": "市值78B規模偏小"
+        },
+        {
+          "ticker": "1210",
+          "name": "大成",
+          "reason_excluded": "飼料業禽流感週期風險"
+        }
+      ],
+      "leader": {
+        "ticker": "1216",
+        "name": "統一",
+        "price": 72.4,
+        "pe_trailing": 20.99,
+        "eps_2026": 3.87,
+        "target_base": 90,
+        "upside_base_pct": 24.3,
+        "rating": "🟢 首選",
+        "data_quality": "med",
+        "financial_highlight": "食品業市值最大411B，2026E EPS=3.87元，超商多元業務防禦現金流",
+        "catalysts": [
+          "超商事業持續成長",
+          "食品漲價效應傳遞"
+        ],
+        "risks": [
+          "原物料成本壓力",
+          "消費疲弱"
+        ],
+        "reason": "食品業龍頭411B。FactSet多家分析師共識目標90元，upside=24.3%",
+        "sources_short": [
+          "[tier-4推論] FactSet EPS3.87 target90元 via news.cnyes.com",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "塑膠工業",
+      "n_constituents": 22,
+      "runner_ups": [
+        {
+          "ticker": "1303",
+          "name": "南亞",
+          "reason_excluded": "PE=156.84x塑化景氣低谷"
+        },
+        {
+          "ticker": "1301",
+          "name": "台塑",
+          "reason_excluded": "2025年虧損"
+        },
+        {
+          "ticker": "1326",
+          "name": "台化",
+          "reason_excluded": "2025年虧損"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "台塑/台化虧損，南亞PE=156x；整體塑化景氣低迷，loss-making + no 2026 EPS consensus"
+    },
+    {
+      "sector": "紡織纖維",
+      "n_constituents": 42,
+      "runner_ups": [
+        {
+          "ticker": "1402",
+          "name": "遠東新",
+          "reason_excluded": "target vs EPS mismatch，2026 EPS共識不足"
+        },
+        {
+          "ticker": "1477",
+          "name": "聚陽",
+          "reason_excluded": "市值54B，較小，single-source target"
+        }
+      ],
+      "leader": {
+        "ticker": "1476",
+        "name": "儒鴻",
+        "price": 342.5,
+        "pe_trailing": 17.04,
+        "eps_2026": 18.76,
+        "target_base": 462,
+        "upside_base_pct": 34.9,
+        "rating": "🟢 首選",
+        "data_quality": "med",
+        "financial_highlight": "高技術壁壘機能布，毛利率30%+，Nike/Under Armour主力供應商",
+        "catalysts": [
+          "全球運動服飾需求回溫",
+          "Salomon品牌雙位數成長"
+        ],
+        "risks": [
+          "Nike訂單保守",
+          "美元匯率風險",
+          "EPS下修趨勢"
+        ],
+        "reason": "紡織業市值最大94B。FactSet EPS=18.76元，target=462.5元，upside=35%，防禦性機能布龍頭",
+        "sources_short": [
+          "[tier-4推論] FactSet EPS18.76 target462.5元 via news.cnyes.com",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "電機機械",
+      "n_constituents": 49,
+      "runner_ups": [
+        {
+          "ticker": "1519",
+          "name": "華城",
+          "reason_excluded": "upside=9.3%未達門檻"
+        },
+        {
+          "ticker": "1590",
+          "name": "亞德客-KY",
+          "reason_excluded": "無充分2026 EPS共識"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "華城(1519)目標~1000元vs現價915元，upside=9.3%未達15%；亞德客無充分EPS共識"
+    },
+    {
+      "sector": "電器電纜",
+      "n_constituents": 16,
+      "runner_ups": [
+        {
+          "ticker": "1605",
+          "name": "華新",
+          "reason_excluded": "PE=43.89x，無2026 EPS共識"
+        },
+        {
+          "ticker": "1609",
+          "name": "大亞",
+          "reason_excluded": "市值26.5B不足龍頭門檻"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "華新PE=43.89x偏高，整體景氣週期性，無充分2026 EPS共識"
+    },
+    {
+      "sector": "化學工業",
+      "n_constituents": 28,
+      "runner_ups": [
+        {
+          "ticker": "1717",
+          "name": "長興",
+          "reason_excluded": "upside=6.4%未達門檻，PE=58.65x偏高"
+        },
+        {
+          "ticker": "1773",
+          "name": "勝一",
+          "reason_excluded": "市值49B偏小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "長興(1717)目標88元upside=6.4%，未達15%；其他候選PE偏高無共識"
+    },
+    {
+      "sector": "生技醫療業",
+      "n_constituents": 53,
+      "runner_ups": [
+        {
+          "ticker": "6446",
+          "name": "藥華藥",
+          "reason_excluded": "extreme analyst dispersion目標1060~750元>2x"
+        },
+        {
+          "ticker": "1795",
+          "name": "美時",
+          "reason_excluded": "市值60B偏小，single-source target"
+        },
+        {
+          "ticker": "6472",
+          "name": "保瑞",
+          "reason_excluded": "市值54B偏小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "藥華藥extreme analyst dispersion(1060~750元>2x)；美時/保瑞市值<65B規模不足"
+    },
+    {
+      "sector": "玻璃陶瓷",
+      "n_constituents": 5,
+      "runner_ups": [
+        {
+          "ticker": "1802",
+          "name": "台玻",
+          "reason_excluded": "2024年虧損 loss-making base"
+        },
+        {
+          "ticker": "1817",
+          "name": "凱撒衛",
+          "reason_excluded": "市值2.8B過小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "台玻2024年虧損，整體板塊loss-making；PE嚴重扭曲(和成374x，中釉152x)"
+    },
+    {
+      "sector": "造紙工業",
+      "n_constituents": 7,
+      "runner_ups": [
+        {
+          "ticker": "1907",
+          "name": "永豐餘",
+          "reason_excluded": "no 2026 EPS consensus"
+        },
+        {
+          "ticker": "1904",
+          "name": "正隆",
+          "reason_excluded": "no 2026 EPS consensus"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "永豐餘EPS近四季1.2元但無2026法人共識目標，整個造紙業data_quality=low"
+    },
+    {
+      "sector": "鋼鐵工業",
+      "n_constituents": 32,
+      "runner_ups": [
+        {
+          "ticker": "2002",
+          "name": "中鋼",
+          "reason_excluded": "loss-making 2025，cyclical"
+        },
+        {
+          "ticker": "2027",
+          "name": "大成鋼",
+          "reason_excluded": "無充分2026 EPS共識，single-source"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "中鋼2025年虧損(-0.29元)，cyclical industry；大成鋼無充分目標共識"
+    },
+    {
+      "sector": "橡膠工業",
+      "n_constituents": 11,
+      "runner_ups": [
+        {
+          "ticker": "2105",
+          "name": "正新",
+          "reason_excluded": "no 2026 EPS consensus，cyclical"
+        },
+        {
+          "ticker": "2101",
+          "name": "南港",
+          "reason_excluded": "市值25.7B不足龍頭門檻"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "正新EPS2026=1.8-2.45元分歧大，無多家法人目標共識；cyclical automotive"
+    },
+    {
+      "sector": "汽車工業",
+      "n_constituents": 41,
+      "runner_ups": [
+        {
+          "ticker": "2207",
+          "name": "和泰車",
+          "reason_excluded": "no 2026 EPS tier-1/2 source，依Source Priority不強補"
+        },
+        {
+          "ticker": "1319",
+          "name": "東陽",
+          "reason_excluded": "汽車零件cyclical"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "和泰車基本面穩健但未能取得tier 1-3 source確認之2026 EPS/目標，依Source Priority規則不得推論補充"
+    },
+    {
+      "sector": "電子零組件業",
+      "n_constituents": 103,
+      "runner_ups": [
+        {
+          "ticker": "2308",
+          "name": "台達電",
+          "reason_excluded": "目標1910元<現價2015元，upside=-5.2%"
+        },
+        {
+          "ticker": "2383",
+          "name": "台光電",
+          "reason_excluded": "PE=99.44x嚴重扭曲"
+        },
+        {
+          "ticker": "2327",
+          "name": "國巨",
+          "reason_excluded": "無充分2026 EPS tier-1/2共識"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "台達電(2308)FactSet目標1910元<現價2015元，upside=-5.2%；台光電/欣興PE嚴重扭曲"
+    },
+    {
+      "sector": "半導體業",
+      "n_constituents": 89,
+      "runner_ups": [
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "reason_excluded": "目標中位2000-2150vs現價2050，upside=4.9%未達門檻"
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "reason_excluded": "FactSet目標2094<現價2295，upside=-8.8%"
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "reason_excluded": "PE=50x偏高，封裝週期性"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "台積電upside=4.9%未達15%；聯發科目標2094<現價2295，upside=-8.8%；整體半導體估值偏高"
+    },
+    {
+      "sector": "電腦及週邊設備業",
+      "n_constituents": 63,
+      "runner_ups": [
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "reason_excluded": "PE=55x偏高，散熱概念週期風險"
+        },
+        {
+          "ticker": "6669",
+          "name": "緯穎",
+          "reason_excluded": "no 2026 EPS/target共識"
+        }
+      ],
+      "leader": {
+        "ticker": "2382",
+        "name": "廣達",
+        "price": 335,
+        "pe_trailing": 17.22,
+        "eps_2026": 22.0,
+        "target_base": 370,
+        "upside_base_pct": 10.4,
+        "rating": "🟢 進場",
+        "data_quality": "med",
+        "financial_highlight": "AI伺服器領導廠，AI訂單能見度至2027年，市值1294B台股電腦類第一",
+        "catalysts": [
+          "AI伺服器2026年三位數成長",
+          "AI訂單比重超過80%"
+        ],
+        "risks": [
+          "AI資本支出週期轉向",
+          "美中貿易摩擦"
+        ],
+        "reason": "電腦週邊設備業市值第一(1294B)。外資目標370元，EPS2026E=22元，upside=10.4%，AI伺服器龍頭，三條件達標",
+        "sources_short": [
+          "[tier-4推論] 外資目標370元 via tw.stock.yahoo.com",
+          "[tier-4推論] FactSet EPS18.58向上修至22元 via news.cnyes.com",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "光電業",
+      "n_constituents": 68,
+      "runner_ups": [
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "reason_excluded": "目標2575<現價2585，upside=-0.4%"
+        },
+        {
+          "ticker": "3481",
+          "name": "群創",
+          "reason_excluded": "PE=853x，TFT cyclical"
+        },
+        {
+          "ticker": "2409",
+          "name": "友達",
+          "reason_excluded": "TFT cyclical，low forward visibility"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "大立光FactSet目標2575元<現價2585元，upside=-0.4%；群創/友達TFT面板cyclical"
+    },
+    {
+      "sector": "通信網路業",
+      "n_constituents": 45,
+      "runner_ups": [
+        {
+          "ticker": "2345",
+          "name": "智邦",
+          "reason_excluded": "外資目標1500-1900vs現價2200，upside<-27%"
+        },
+        {
+          "ticker": "3045",
+          "name": "台灣大",
+          "reason_excluded": "市值420B次大，EPS共識未確認"
+        }
+      ],
+      "leader": {
+        "ticker": "2412",
+        "name": "中華電",
+        "price": 136.5,
+        "pe_trailing": 27.35,
+        "eps_2026": 4.9,
+        "target_base": 145,
+        "upside_base_pct": 6.2,
+        "rating": "🟡 偏高",
+        "data_quality": "high",
+        "financial_highlight": "台灣電信龍頭，2025 EPS=4.99元創8年新高，2026官方財測EPS=4.82-5.02元，高殖利率約4%",
+        "catalysts": [
+          "AI資料中心網路需求提升",
+          "5G滲透率持續"
+        ],
+        "risks": [
+          "電信市場成熟無高成長",
+          "競爭對手削價"
+        ],
+        "reason": "電信龍頭市值1059B。官方2026財測EPS=4.82-5.02元(tier-3 company guidance)，upside=6.2%正向，三條件達標",
+        "sources_short": [
+          "[tier-3 company guidance] 中華電2026財測EPS 4.82-5.02元，2025法說會",
+          "[tier-4推論] target 145元估算，請參閱最新外資報告確認"
+        ]
+      }
+    },
+    {
+      "sector": "電子通路業",
+      "n_constituents": 21,
+      "runner_ups": [
+        {
+          "ticker": "3702",
+          "name": "大聯大",
+          "reason_excluded": "傳統IC通路成長較慢，無充分2026 EPS共識"
+        },
+        {
+          "ticker": "2347",
+          "name": "聯強",
+          "reason_excluded": "毛利率薄，AI轉型不明確"
+        }
+      ],
+      "leader": {
+        "ticker": "3036",
+        "name": "文曄",
+        "price": 213.5,
+        "pe_trailing": 22.06,
+        "eps_2026": 19.44,
+        "target_base": 245,
+        "upside_base_pct": 14.8,
+        "rating": "🟢 進場",
+        "data_quality": "med",
+        "financial_highlight": "AI通路商市值最大270B，2025全年EPS=11.61元年增43%，2026E EPS=19.44元",
+        "catalysts": [
+          "AI零組件通路商重估",
+          "AI伺服器零組件需求翻倍"
+        ],
+        "risks": [
+          "存貨週期轉向",
+          "AI資本支出放緩"
+        ],
+        "reason": "電子通路業市值最大(270B)。FactSet EPS=19.44元，多家外資目標243-245.5元，upside=15%，龍頭地位確立",
+        "sources_short": [
+          "[tier-4推論] FactSet EPS19.44 target245.5元 via today.line.me",
+          "[tier-4推論] 外資target243元",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "資訊服務業",
+      "n_constituents": 11,
+      "runner_ups": [
+        {
+          "ticker": "6214",
+          "name": "精誠",
+          "reason_excluded": "no 2026 EPS/target共識，data_quality=low"
+        },
+        {
+          "ticker": "3029",
+          "name": "零壹",
+          "reason_excluded": "市值16.3B過小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "精誠(6214)2026 EPS/target缺乏2+源法人共識；整體市值規模偏小(最大34B)"
+    },
+    {
+      "sector": "其他電子業",
+      "n_constituents": 45,
+      "runner_ups": [
+        {
+          "ticker": "2360",
+          "name": "致茂",
+          "reason_excluded": "PE=73.55x偏高"
+        },
+        {
+          "ticker": "3665",
+          "name": "貿聯-KY",
+          "reason_excluded": "無充分2026 EPS共識"
+        }
+      ],
+      "leader": {
+        "ticker": "2317",
+        "name": "鴻海",
+        "price": 221,
+        "pe_trailing": 16.3,
+        "eps_2026": 18.9,
+        "target_base": 300,
+        "upside_base_pct": 35.7,
+        "rating": "🟢 首選",
+        "data_quality": "med",
+        "financial_highlight": "全球最大EMS廠，AI伺服器+電動車佈局，市值3095B台股第二大，2026E EPS=18.9元年增29%",
+        "catalysts": [
+          "AI伺服器訂單持續成長",
+          "NVIDIA GB200 rack組裝",
+          "電動車代工佈局"
+        ],
+        "risks": [
+          "美中貿易政策",
+          "單一客戶集中風險",
+          "AI資本支出週期"
+        ],
+        "reason": "其他電子業市值最大(3095B)。高盛EPS=19.06元，大摩目標317元，保守目標300元，upside=35.7%",
+        "sources_short": [
+          "[tier-4推論] 大摩target317 高盛target340 via wantrich.chinatimes.com",
+          "[tier-4推論] FactSet EPS預估 via sinotrade.com.tw",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "建材營造業",
+      "n_constituents": 55,
+      "runner_ups": [
+        {
+          "ticker": "2542",
+          "name": "興富發",
+          "reason_excluded": "EPS下修，no clear 2026 target consensus"
+        },
+        {
+          "ticker": "2540",
+          "name": "愛山林",
+          "reason_excluded": "PE=86.32x嚴重扭曲，建商週期性"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "興富發EPS2025下滑，2026E=2.8元，無tier 1-2 target共識；建材營造業景氣週期性强"
+    },
+    {
+      "sector": "航運業",
+      "n_constituents": 27,
+      "runner_ups": [
+        {
+          "ticker": "2603",
+          "name": "長榮",
+          "reason_excluded": "cyclical，extreme analyst dispersion(180~348元>2x)"
+        },
+        {
+          "ticker": "2633",
+          "name": "台灣高鐵",
+          "reason_excluded": "no 2026 EPS/target tier-1/2 source"
+        },
+        {
+          "ticker": "2615",
+          "name": "萬海",
+          "reason_excluded": "cyclical shipping"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "長榮analyst dispersion極大(180~348元>2x)；台灣高鐵no tier 1-2 EPS共識；航運business cyclical"
+    },
+    {
+      "sector": "觀光餐旅",
+      "n_constituents": 18,
+      "runner_ups": [
+        {
+          "ticker": "2707",
+          "name": "晶華",
+          "reason_excluded": "no 2026 EPS/target共識，data_quality=low"
+        },
+        {
+          "ticker": "2727",
+          "name": "王品",
+          "reason_excluded": "餐飲業景氣波動，市值18.7B偏小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "晶華2026 EPS無法人共識；整個觀光餐旅業前向可見性低，市值最大僅22.6B"
+    },
+    {
+      "sector": "金融保險業",
+      "n_constituents": 49,
+      "runner_ups": [
+        {
+          "ticker": "2881",
+          "name": "富邦金",
+          "reason_excluded": "IFRS17不確定，投顧維持中立"
+        },
+        {
+          "ticker": "2891",
+          "name": "中信金",
+          "reason_excluded": "FactSet目標51.5<現價53.5，upside=-3.7%"
+        }
+      ],
+      "leader": {
+        "ticker": "2882",
+        "name": "國泰金",
+        "price": 75.9,
+        "pe_trailing": 11.48,
+        "eps_2026": 6.12,
+        "target_base": 79,
+        "upside_base_pct": 4.1,
+        "rating": "🟡 偏高",
+        "data_quality": "med",
+        "financial_highlight": "台灣最大壽險集團市值1113B，EPS2026E=6.12元，預估殖利率4%+",
+        "catalysts": [
+          "股市回穩資產評價回升",
+          "殖利率吸引存股資金"
+        ],
+        "risks": [
+          "IFRS17新制波動",
+          "股市大跌影響壽險資產評價"
+        ],
+        "reason": "金融保險業防禦龍頭。投顧買進評等目標79元，2026 EPS=6.12元，upside=4.1%正向，三條件達標",
+        "sources_short": [
+          "[tier-4推論] 投顧目標79元 EPS6.12元 via tw.stock.yahoo.com",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "貿易百貨業",
+      "n_constituents": 19,
+      "runner_ups": [
+        {
+          "ticker": "2915",
+          "name": "潤泰全",
+          "reason_excluded": "PE=4.91x特殊項目data_quality=low"
+        },
+        {
+          "ticker": "2903",
+          "name": "遠百",
+          "reason_excluded": "百貨景氣週期性，EPS波動大"
+        }
+      ],
+      "leader": {
+        "ticker": "2912",
+        "name": "統一超",
+        "price": 238.5,
+        "pe_trailing": 22.12,
+        "eps_2026": 11.28,
+        "target_base": 303,
+        "upside_base_pct": 27.0,
+        "rating": "🟢 首選",
+        "data_quality": "med",
+        "financial_highlight": "台灣超商龍頭6000+門市，EPS穩定10-11元，現金殖利率3.4%，必需性通路防禦",
+        "catalysts": [
+          "海外擴張(菲律賓/越南)",
+          "AI門市效率提升"
+        ],
+        "risks": [
+          "消費力道疲軟",
+          "門市飽和成長瓶頸"
+        ],
+        "reason": "貿易百貨業市值最大(248B)。FactSet 9位分析師共識目標303元，2026 EPS=11.28元，upside=27%",
+        "sources_short": [
+          "[tier-4推論] FactSet target303 EPS11.25 via news.cnyes.com/news/id/6208773",
+          "[tier-4推論] FactSet target303 EPS11.31 via news.cnyes.com/news/id/6157782",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "油電燃氣業",
+      "n_constituents": 8,
+      "runner_ups": [
+        {
+          "ticker": "6505",
+          "name": "台塑化",
+          "reason_excluded": "cyclical，EPS分析師分歧，extreme analyst dispersion"
+        },
+        {
+          "ticker": "8926",
+          "name": "台汽電",
+          "reason_excluded": "市值33.4B，無充分EPS共識"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "台塑化EPS分析師差異大(1.27~1.8元)，目標56.5~70元差距>2x；cyclical commodity cycles排除"
+    },
+    {
+      "sector": "綠能環保",
+      "n_constituents": 20,
+      "runner_ups": [
+        {
+          "ticker": "6944",
+          "name": "兆聯實業",
+          "reason_excluded": "no stable 8Q EPS"
+        },
+        {
+          "ticker": "2072",
+          "name": "世紀風電",
+          "reason_excluded": "風電建置週期波動大"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "多數廠商仍在建置期，無穩定8季EPS；data_quality=low，不符合防禦龍頭基本面穩健定義"
+    },
+    {
+      "sector": "數位雲端",
+      "n_constituents": 10,
+      "runner_ups": [
+        {
+          "ticker": "8454",
+          "name": "富邦媒",
+          "reason_excluded": "市值46.6B偏小，data_quality=low"
+        },
+        {
+          "ticker": "7722",
+          "name": "LINEPAY",
+          "reason_excluded": "市值21B過小"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "最大市值僅46.6B；data_quality=low；缺乏tier 1-2 source支撐"
+    },
+    {
+      "sector": "運動休閒",
+      "n_constituents": 18,
+      "runner_ups": [
+        {
+          "ticker": "9910",
+          "name": "豐泰",
+          "reason_excluded": "target vs EPS mismatch，EPS=5.66元vs目標211元矛盾"
+        },
+        {
+          "ticker": "9904",
+          "name": "寶成",
+          "reason_excluded": "no 2026 EPS/target tier-1/2 source"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "豐泰(9910) EPS=5.66元vs target=211元明顯mismatch(implied PE=37x)，target vs EPS mismatch排除"
+    },
+    {
+      "sector": "居家生活",
+      "n_constituents": 11,
+      "runner_ups": [
+        {
+          "ticker": "9911",
+          "name": "櫻花",
+          "reason_excluded": "市值18.4B偏小"
+        },
+        {
+          "ticker": "9924",
+          "name": "福興",
+          "reason_excluded": "市值6.7B過小"
+        }
+      ],
+      "leader": {
+        "ticker": "8464",
+        "name": "億豐",
+        "price": 372,
+        "pe_trailing": 16.51,
+        "eps_2026": 22.07,
+        "target_base": 490,
+        "upside_base_pct": 31.7,
+        "rating": "🟢 首選",
+        "data_quality": "med",
+        "financial_highlight": "全球最大客製化遮蔽廠，市值109B居家生活第一，EPS穩定22-25元",
+        "catalysts": [
+          "北美房市回溫換裝需求",
+          "AI設計工具提升訂單效率"
+        ],
+        "risks": [
+          "美國關稅風險",
+          "消費性支出下行"
+        ],
+        "reason": "居家生活業市值最大(109B)。FactSet 10+分析師共識EPS=22.07元，目標490元，upside=31.7%，三條件全達標",
+        "sources_short": [
+          "[tier-4推論] FactSet EPS22.07 target490元 via news.cnyes.com/news/id/6279515",
+          "[tier-4推論] FactSet target512元 via news.cnyes.com/news/id/6109828",
+          "tier-2: MOPS財報"
+        ]
+      }
+    },
+    {
+      "sector": "其他業",
+      "n_constituents": 56,
+      "runner_ups": [
+        {
+          "ticker": "5871",
+          "name": "中租-KY",
+          "reason_excluded": "目標117<現價121，upside=-3.3%"
+        },
+        {
+          "ticker": "9917",
+          "name": "中保科",
+          "reason_excluded": "no 2026 EPS/target tier-1/2 source"
+        },
+        {
+          "ticker": "9941",
+          "name": "裕融",
+          "reason_excluded": "no 2026 EPS共識，類金融data_quality=low"
+        }
+      ],
+      "leader": null,
+      "reason_no_leader": "中租-KY目標117元<現價121元upside=-3.3%；中保科/裕融無tier 1-2確認；sector多元混合"
+    }
+  ]
+}
